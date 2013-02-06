@@ -6,8 +6,8 @@ body {
 }
 
 h1 {
-	margin: 12px 0 7px;
-	padding: 4px;
+	margin: 9pt 0 5pt;
+	padding: 3pt;
 	text-align: center;
 	font-family: arial,helvetica; 
 }
@@ -27,22 +27,22 @@ a:hover, a:active {
 }
 
 p {
-	margin: 0 0 18px; 
+	margin: 0 0 12pt; 
 }
 
 ul {
-	margin: 0 0 12px; 
+	margin: 0 0 10pt; 
 }
 
 li {
-	margin: 0 20px 4px 12px; 
+	margin: 0 16pt 3pt 10pt; 
 }
 
 .strong {
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
-	margin: 12px 70px; 
+	margin: 10pt 20pt;
 }
 
 /* Header styling */
@@ -103,7 +103,7 @@ li {
 #footer {
 	border-top: 1px solid #777;
 	color: #777;
-	margin: 12px 0 0;
+	margin: 10pt 0 0;
 	padding: 4pt;
 	text-align: center;
 	font-size: 90%;
