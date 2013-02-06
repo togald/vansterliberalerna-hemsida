@@ -6,16 +6,20 @@ body {
 }
 
 h1 {
-	margin: 9pt 0 5pt;
-	padding: 3pt;
+	margin: 12pt 0 5pt;
+	padding: 0;
 	text-align: center;
 	font-family: arial,helvetica; 
 }
 
 h2 {
+	margin: 12pt 0 3pt;
+	padding: 0;
 }
 
 h3 {
+	margin: 12pt 0 3pt;
+	padding: 0;
 }
 
 a:link, a:visited {
