@@ -61,7 +61,7 @@ li {
 	color: white;
 }
 
-#headwrapper img {
+#headwrapper object img, #headwrapper object {
 	float: right;
 }
 
