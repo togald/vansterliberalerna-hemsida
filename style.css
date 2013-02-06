@@ -52,7 +52,7 @@ li {
 }
 
 #headwrapper {
-	max-width: 800px;
+	max-width: 600pt;
 	margin: auto;
 }
 
@@ -97,7 +97,7 @@ li {
 #content {
 	padding: 9pt;
 	margin: auto;
-	max-width: 800px; 
+	max-width: 600pt; 
 }
 
 #footer {
