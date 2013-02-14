@@ -117,3 +117,11 @@ li {
 	text-align: center;
 	font-size: 90%;
 }
+
+#footer a:link, #footer a:visited {
+	color: #77b;
+}
+
+#footer a:hover, #footer a:active {
+	color: green;
+}
