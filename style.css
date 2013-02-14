@@ -60,6 +60,11 @@ li {
 	margin: auto;
 }
 
+#headwrapper a:link, #headwrapper a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
 #hdrcontainer {
 	float: left;
 	color: white;

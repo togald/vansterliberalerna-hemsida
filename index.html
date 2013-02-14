@@ -16,12 +16,18 @@
 			document.getElementById("authorEmail").href = "mailto:" + address + "@" + domain + "." + suffix;
 			document.getElementById("authorEmail").innerHTML = address + "@" + domain + "." + suffix;
 		 }
+		 function show(x) {
+			document.getElementById(x).style.visibility = "visible";
+		 }
+		 function hide(x) {
+			document.getElementById(x).style.visibility = "hidden";
+		 }
 	</script>
 </head>
 <body onload="printMail()">
 	<div id="header">
 		<div id="headwrapper">
-			<div id="hdrcontainer">
+			<a href="" title="Klicka för att återvända till startsidan"><div id="hdrcontainer">
 				<h1>Vänsterliberalerna</h1>
 				<h2>Nya tider ger ny politik</h2>
 				<div id="navbar">
@@ -29,7 +35,7 @@
 					<a href="">Om partiet</a>
 					<a href="">Politik</a>
 					<a href="">Bli medlem</a>
-				</div>
+				</div></a>
 			</div>
 			<object data="img/icon.svg" type="image/svg+xml">
 				<img src="img/icon.png" height="96" width="96" />
