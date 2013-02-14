@@ -1,0 +1,7 @@
+Design:
+- PHP används för att automatiskt generera menyerna
+	- ALTERNATIV: låta Java, Haskell eller något annat programspråk stå för det, och göra det till en statisk uppgift? förmodligen bättre för serverprestandan. Dessutom bra för portabiliteten. Språk? Java för portabilitet. 
+- Responsive web design: sidan ser inte ut som den ska i telefonen. Varför?
+- Byte till HTML5 istället för XHTML1?
+- Sidebar? Medlemsinloggning, nyhetsflöde, kontaktinfo...?
+- Ska sidebaren vara statisk, eller ändras beroende på vilken sida som besöks?
