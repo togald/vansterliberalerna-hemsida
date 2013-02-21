@@ -71,7 +71,7 @@ header {
 	height: 96px;
 }
 
-hgroup {
+#hgroup {
 	float: left;
 	color: white;
 }
@@ -80,26 +80,22 @@ header img, header object {
 	float: right;
 }
 
-hgroup h1 {
+#hgroup h1 {
 	margin: 0;
 	padding: 7pt 5pt 3pt;
 	text-align: left;
 }
 
-hgroup h2 {
+#hgroup h2 {
 	padding: 0 5pt 6pt;
 	margin: 0;
 	font-size: 90%;
 	border-bottom: 1px solid white;
 }
 
-hgroup a:link, hgroup a:visited {
+#hgroup h1 a {
 	color: #fff;
 	text-decoration: none;
-}
-
-hgroup a:hover h1, hgroup a:active h1 {
-	border-left: 1px solid white;
 }
 
 nav ul {
@@ -132,7 +128,6 @@ nav li a:hover, nav li a:active {
 nav ul li ul {
 	display: none;
 	border-left: 5px solid #f00;
-	border-right: 1px solid #f00;
 	margin-top: -2pt;
 }
 
@@ -148,7 +143,6 @@ nav li ul li {
 	position: relative;
 	display: list-item;
 	background-color: #f00;
-	border-top: 1px solid #fff;
 }
 
 nav ul li ul li a:link, nav ul li ul li a:visited {
@@ -177,7 +171,7 @@ footer a:hover, footer a:active {
 	color: green;
 }
 
-@media screen and ( max-width: 620px ) {
+@media screen and ( max-width: 490px ) {
 	header object, header img {
 		visibility: hidden;
 	}
