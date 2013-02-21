@@ -35,7 +35,7 @@ p {
 }
 
 ul {
-	margin: 0 0 10pt; 
+	margin: 4pt 0 10pt; 
 }
 
 li {
@@ -46,7 +46,7 @@ li {
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
-	margin: 10pt auto;
+	margin: 10pt auto 12pt;
 	max-width: 370pt;
 }
 
@@ -81,16 +81,25 @@ header img, header object {
 }
 
 hgroup h1 {
-	margin: 7pt 5pt 3pt;
-	padding: 0;
+	margin: 0;
+	padding: 7pt 5pt 3pt;
 	text-align: left;
 }
 
 hgroup h2 {
 	padding: 0 5pt 6pt;
-	margin: 0 0 3pt;
+	margin: 0;
 	font-size: 90%;
 	border-bottom: 1px solid white;
+}
+
+hgroup a:link, hgroup a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+hgroup a:hover h1, hgroup a:active h1 {
+	border-left: 1px solid white;
 }
 
 nav ul {
@@ -101,22 +110,49 @@ nav ul {
 
 nav ul li {
 	display: inline;
+	float: left;
 	margin: 0;
 	padding: 0;
 }
 
-nav a:link, nav a:visited {
+nav li a:link, nav li a:visited {
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 	padding: 3pt 12pt;
 	margin: 0;
-	width: 150px;
+	display: block;
 }
 
-nav a:hover, nav a:active {
+nav li a:hover, nav li a:active {
 	color: #f00;
 	background-color: #fff;
+}
+
+nav ul li ul {
+	display: none;
+	border-left: 5px solid #f00;
+	border-right: 1px solid #f00;
+	margin-top: -2pt;
+}
+
+nav ul li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+nav li ul li {
+	float: none;
+	position: relative;
+	display: list-item;
+	background-color: #f00;
+	border-top: 1px solid #fff;
+}
+
+nav ul li ul li a:link, nav ul li ul li a:visited {
+	min-width: 40pt;
 }
 
 /* Special content styling */
@@ -141,8 +177,14 @@ footer a:hover, footer a:active {
 	color: green;
 }
 
-@media screen and ( width lt 620px ) {
+@media screen and ( max-width: 620px ) {
 	header object, header img {
+		visibility: hidden;
+	}
+}
+
+@media print {
+	nav {
 		visibility: hidden;
 	}
 }
