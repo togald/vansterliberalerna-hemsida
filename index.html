@@ -6,6 +6,7 @@
 	
 	<meta name="author" content="Togald Nilsson">
 	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/gif">
@@ -29,11 +30,13 @@
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 </head>
+<body onload="printMail()">
 	<div id="bgcolor"></div>
 	<header>
 		<div id="hgroup">
 			<h1><a href="" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
 			<h2>Nya tider ger ny politik</h2>
+			<img id="navbutton" src="img/favicon.ico" height="24" width="24" alt="Navigation show button" onmouseover="document.nav.style.visibility=visible">
 			<nav>
 				<ul>
 					<li><a href="">Hem</a>
@@ -76,4 +79,5 @@
 		<p>Vänsterliberalerna 2013. Webbansvarig: Togald Nilsson, <a href="" id="authorEmail">Togald Nilsson</a><br>
 		Källkoden till sidan distribueras under <a href="http://sam.zoy.org/wtfpl/">WTFPL-licensen</a>, och finns på <a href="https://github.com/MFserver/vansterliberalerna-hemsida">GitHub</a> för nedladdning. Copyright är för mesar. 
 	</footer>
+</body>
 </html>

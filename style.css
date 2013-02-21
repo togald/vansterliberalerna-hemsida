@@ -98,55 +98,61 @@ header img, header object {
 	text-decoration: none;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li {
-	display: inline;
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-nav li a:link, nav li a:visited {
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	padding: 3pt 12pt;
-	margin: 0;
-	display: block;
-}
-
-nav li a:hover, nav li a:active {
-	color: #f00;
-	background-color: #fff;
-}
-
-nav ul li ul {
-	display: none;
-	border-left: 5px solid #f00;
-	margin-top: -2pt;
-}
-
-nav ul li:hover ul {
-	display: block;
-	position: absolute;
-	margin: 0;
-	padding: 0;
-}
-
-nav li ul li {
-	float: none;
-	position: relative;
-	display: list-item;
-	background-color: #f00;
-}
-
-nav ul li ul li a:link, nav ul li ul li a:visited {
-	min-width: 40pt;
+@media screen and ( min-width: 491px ) {
+	#navbutton {
+		display: none;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav ul li {
+		display: inline;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li a:link, nav li a:visited {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 3pt 12pt;
+		margin: 0;
+		display: block;
+	}
+	
+	nav li a:hover, nav li a:active {
+		color: #f00;
+		background-color: #fff;
+	}
+	
+	nav ul li ul {
+		display: none;
+		border-left: 5px solid #f00;
+		margin-top: -2pt;
+	}
+	
+	nav ul li:hover ul {
+		display: block;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li ul li {
+		float: none;
+		position: relative;
+		display: list-item;
+		background-color: #f00;
+	}
+	
+	nav ul li ul li a:link, nav ul li ul li a:visited {
+		min-width: 40pt;
+	}
 }
 
 /* Special content styling */
@@ -173,7 +179,61 @@ footer a:hover, footer a:active {
 
 @media screen and ( max-width: 490px ) {
 	header object, header img {
-		visibility: hidden;
+		display: none;
+	}
+	
+	#hgroup {
+		width: 100%;
+	}
+	
+	#hgroup h2 {
+		border: 0;
+		text-align: center;
+	}
+	
+	#hgroup h1 {
+		text-align: center;
+	}
+	
+	nav {
+		display: none;
+		width: 100%;
+	}
+	
+	#navbutton {
+		display: block;
+		float: none;
+		margin: auto;
+	}
+	
+	nav a:link, nav a:visited {
+		color: #fff;
+		background-color: #f00;
+		display: block;
+		width: 100%;
+		padding: 3pt;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	nav a:hover, nav a:active {
+		color: #f00;
+		background-color: #fff;
+	}
+	
+	nav ul, nav li ul {
+		display: list-item;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #f00;
+	}
+	
+	nav ul li, nav ul li ul li {
+		display: list-item;
+		list-style-type: none;
+		margin: 0 12pt;
+		padding: 0;
 	}
 }
 
