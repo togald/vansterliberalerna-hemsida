@@ -1,6 +1,5 @@
 body {
 	font-family: arial narrow,helvetica;
-	font-size: 80%; 
 	margin: 0;
 	padding: 0;
 }
@@ -98,7 +97,7 @@ header img, header object {
 	text-decoration: none;
 }
 
-@media screen and ( min-width: 491px ) {
+@media screen and ( min-width: 551px ) {
 	#navbutton {
 		display: none;
 	}
@@ -181,7 +180,7 @@ footer a:hover, footer a:active {
 	color: green;
 }
 
-@media screen and ( max-width: 490px ) {
+@media screen and ( max-width: 550px ) {
 	header object, header img {
 		display: none;
 	}
