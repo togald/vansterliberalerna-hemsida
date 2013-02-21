@@ -195,7 +195,7 @@ footer a:hover, footer a:active {
 		text-align: center;
 	}
 	
-	nav {
+	#nav {
 		display: none;
 		width: 100%;
 	}
@@ -204,6 +204,7 @@ footer a:hover, footer a:active {
 		display: block;
 		float: none;
 		margin: auto;
+		cursor: pointer;
 	}
 	
 	nav a:link, nav a:visited {
@@ -234,11 +235,5 @@ footer a:hover, footer a:active {
 		list-style-type: none;
 		margin: 0 12pt;
 		padding: 0;
-	}
-}
-
-@media print {
-	nav {
-		visibility: hidden;
 	}
 }

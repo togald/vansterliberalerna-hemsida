@@ -17,13 +17,24 @@
 			var suffix = "com";
 			document.getElementById("authorEmail").href = "mailto:" + address + "@" + domain + "." + suffix;
 			document.getElementById("authorEmail").innerHTML = address + "@" + domain + "." + suffix;
-		 }
-		 function show(x) {
+			visible = 0;
+		}
+		function show(x) {
 			document.getElementById(x).style.visibility = "visible";
-		 }
-		 function hide(x) {
+		}
+		function hide(x) {
 			document.getElementById(x).style.visibility = "hidden";
-		 }
+		}
+		function toggle(x) {
+			if (visible == 0) {
+				document.getElementById(x).style.display = "block";
+				visible = 1;
+			}
+			else {
+				document.getElementById(x).style.display = "none";
+				visible = 0;
+			}
+		}
 	</script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,8 +47,8 @@
 		<div id="hgroup">
 			<h1><a href="" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
 			<h2>Nya tider ger ny politik</h2>
-			<img id="navbutton" src="img/favicon.ico" height="24" width="24" alt="Navigation show button" onmouseover="document.nav.style.visibility=visible">
-			<nav>
+			<img id="navbutton" src="img/favicon.ico" height="24" width="24" alt="Klicka för att navigera" onclick="toggle('nav')">
+			<nav id="nav">
 				<ul>
 					<li><a href="">Hem</a>
 					<li><a href="">Politik</a>
