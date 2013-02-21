@@ -31,7 +31,7 @@ a:hover, a:active {
 }
 
 p {
-	margin: 0 0 14pt; 
+	margin: 0 0 12pt; 
 }
 
 ul {
@@ -46,66 +46,49 @@ li {
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
-	margin: 10pt auto;
-	max-width: 370pt;
+	margin: 10pt 20pt;
 }
 
-header, #content, footer {
+/* Header styling */
+#header {
+	background-color: #f00;
+	height: 96px;
+}
+
+#headwrapper {
 	max-width: 600pt;
 	margin: auto;
 }
 
-/* Header styling */
-#bgcolor {
-	position: absolute;
-	background-color: #f00;
-	height: 96px;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: -1;
+#headwrapper a:link, #headwrapper a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
-header {
-	display: block;
-	height: 96px;
-}
-
-hgroup {
+#hdrcontainer {
 	float: left;
 	color: white;
 }
 
-header img, header object {
+#headwrapper object img, #headwrapper object {
 	float: right;
 }
 
-hgroup h1 {
+#hdrcontainer h1 {
 	margin: 7pt 5pt 3pt;
 	padding: 0;
 	text-align: left;
 }
 
-hgroup h2 {
+#hdrcontainer h2 {
 	padding: 0 5pt 6pt;
 	margin: 0 0 3pt;
 	font-size: 90%;
+	border: 0;
 	border-bottom: 1px solid white;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-
-nav a:link, nav a:visited {
+#navbar a:link, #navbar a:visited {
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
@@ -114,35 +97,31 @@ nav a:link, nav a:visited {
 	width: 150px;
 }
 
-nav a:hover, nav a:active {
+#navbar a:hover, #navbar a:active {
 	color: #f00;
 	background-color: #fff;
 }
 
 /* Special content styling */
 #content {
-	padding: 5pt;
+	padding: 9pt;
+	margin: auto;
+	max-width: 600pt; 
 }
 
-footer {
+#footer {
 	border-top: 1px solid #777;
 	color: #777;
-	margin-top: 7pt;
+	margin: 10pt 0 0;
 	padding: 4pt;
 	text-align: center;
 	font-size: 90%;
 }
 
-footer a:link, footer a:visited {
+#footer a:link, #footer a:visited {
 	color: #77b;
 }
 
-footer a:hover, footer a:active {
+#footer a:hover, #footer a:active {
 	color: green;
-}
-
-@media screen and ( width lt 620px ) {
-	header object, header img {
-		visibility: hidden;
-	}
 }
