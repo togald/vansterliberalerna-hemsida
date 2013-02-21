@@ -103,6 +103,10 @@ header img, header object {
 		display: none;
 	}
 	
+	#nav {
+		display: block;
+	}
+	
 	nav ul {
 		list-style-type: none;
 		margin: 0;
@@ -200,11 +204,17 @@ footer a:hover, footer a:active {
 		width: 100%;
 	}
 	
+	#nav.expanded {
+		display: block;
+	}
+	
 	#navbutton {
 		display: block;
 		float: none;
-		margin: auto;
 		cursor: pointer;
+		font-size: 24px;
+		padding-left: 4pt;
+		padding-right: 4pt;
 	}
 	
 	nav a:link, nav a:visited {

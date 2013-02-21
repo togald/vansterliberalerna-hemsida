@@ -27,11 +27,11 @@
 		}
 		function toggle(x) {
 			if (visible == 0) {
-				document.getElementById(x).style.display = "block";
+				document.getElementById(x).className = "expanded";
 				visible = 1;
 			}
 			else {
-				document.getElementById(x).style.display = "none";
+				document.getElementById(x).className = "";
 				visible = 0;
 			}
 		}
@@ -47,7 +47,7 @@
 		<div id="hgroup">
 			<h1><a href="" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
 			<h2>Nya tider ger ny politik</h2>
-			<img id="navbutton" src="img/favicon.ico" height="24" width="24" alt="Klicka för att navigera" onclick="toggle('nav')">
+			<span id="navbutton" onclick="toggle('nav')"> ≡ </span>
 			<nav id="nav">
 				<ul>
 					<li><a href="">Hem</a>
