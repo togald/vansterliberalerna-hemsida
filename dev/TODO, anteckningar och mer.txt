@@ -1,6 +1,5 @@
 Design:
-- PHP används för att automatiskt generera menyerna
-	- ALTERNATIV: göra det till en statisk uppgift som görs av webmastern vid uppdatering? Kräver scriptfiler. 
+- Script används för att generera menyer, och lägga in statisk kod på alla sidor. 
 - Responsive web design: sidan ser inte ut som den ska i telefonen. Varför?
 - Byte till HTML5 istället för XHTML1?
 - Sidebar? Medlemsinloggning, nyhetsflöde, kontaktinfo...?

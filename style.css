@@ -1,5 +1,5 @@
 body {
-	font-family: arial,helvetica;
+	font-family: arial narrow, helvetica, liberation sans, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -83,18 +83,23 @@ header img, header object {
 	margin: 0;
 	padding: 7pt 5pt 3pt;
 	text-align: left;
+	font-size: 26px;
 }
 
 #hgroup h2 {
 	padding: 0 5pt 6pt;
 	margin: 0;
-	font-size: 90%;
+	font-size: 14px;
 	border-bottom: 1px solid white;
 }
 
 #hgroup h1 a {
 	color: #fff;
 	text-decoration: none;
+}
+
+nav {
+	font-size: 14px;
 }
 
 @media screen and ( min-width: 551px ) {
@@ -189,13 +194,14 @@ footer a:hover, footer a:active {
 		width: 100%;
 	}
 	
-	#hgroup h2 {
-		border: 0;
+	#hgroup h1 {
 		text-align: center;
 	}
 	
-	#hgroup h1 {
+	#hgroup h2 {
+		border: 0;
 		text-align: center;
+		
 	}
 	
 	#nav {

@@ -2,9 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>
-		<?php echo $title ?>
-	</title>
+	<title><?php echo $title ?></title>
 	
 	<meta name="author" content="Togald Nilsson">
 	<meta name="robots" content="noindex, nofollow">

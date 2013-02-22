@@ -7,7 +7,7 @@ Vänsterliberalerna är ett politiskt parti stationerat i Uppsala, Sverige. Dett
 
 TODO: 
  - Revidera och sedan godkänna stilmallen i partistyrelsen
- - Introducera PHP
+ - Introducera PHP (påbörjat)
  - Bestämma vad som ska finnas på sidan förutom info om politiken
- - Skapa sidor med faktiskt innehåll och metoder att komma åt dem
+ - Skapa sidor med faktiskt innehåll
  - Publicera!
