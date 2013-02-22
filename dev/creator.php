@@ -17,7 +17,7 @@
 	*/
 	
 	$globalRoot = '/home/mfserver/ramdisk/source/';
-	$globalRemoteRoot = '/home/mfserver/ramdisk/target/';
+	$globalRemoteRoot = 'http://vansterliberalerna.comeze.com/';
 	$globalOutputRoot = '/home/mfserver/ramdisk/target/';
 	$dirs;
 	$i;
@@ -47,7 +47,7 @@
 			$file = fopen($globalOutputRoot.$page.'index.html','w');
 			fwrite($file, $output);
 			fclose($file);
-			$status = "$page/ successfully created";
+			$status = "Successfully created $page/index.html";
 		} else {
 			$status = "No template avaliable for $page/";
 		}
@@ -101,6 +101,11 @@
 		makePage($dir);
 	}
 	makePage("");
-	copy($globalRoot.'style.css', $globalRemoteRoot.'style.css');
-	recurse_copy($globalRoot.'img', $globalRemoteRoot.'img')
+	if ( copy($globalRoot.'style.css', $globalOutputRoot.'style.css') ) {
+		echo "Successfully copied /style.css\n";
+	} else {
+		echo "ERROR: /style.css could not be copied\n";
+	}
+	recurse_copy($globalRoot.'img', $globalOutputRoot.'img');
+	echo "Successfully copied /img/\n";
 ?>
