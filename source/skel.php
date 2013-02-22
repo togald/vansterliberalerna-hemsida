@@ -8,8 +8,8 @@
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	
-	<link rel="stylesheet" href="<?php echo $globalRemoteRoot ?>style.css" type="text/css">
-	<link rel="shortcut icon" href="<?php echo $globalRemoteRoot ?>img/favicon.ico" type="image/gif">
+	<link rel="stylesheet" href="<?php echo $URL ?>style.css" type="text/css">
+	<link rel="shortcut icon" href="<?php echo $URL ?>img/favicon.ico" type="image/gif">
 	<script type="text/javascript">
 		function printMail() {
 			var address = "togald.nilsson";
@@ -63,8 +63,8 @@
 				</ul>
 			</nav>
 		</div>
-		<object data="<?php echo $globalRemoteRoot ?>img/icon.svg" type="image/svg+xml">
-			<img src="<?php echo $globalRemoteRoot ?>img/icon.png" height="96" width="96" alt="Vänsterliberalernas logotyp">
+		<object data="<?php echo $URL ?>img/icon.svg" type="image/svg+xml">
+			<img src="<?php echo $URL ?>img/icon.png" height="96" width="96" alt="Vänsterliberalernas logotyp">
 		</object>
 	</header>
 	<div id="content">
