@@ -71,6 +71,22 @@
 		}
 	}
 	
+	function recurse_copy($src,$dst) { 
+		$dir = opendir($src); 
+		@mkdir($dst); 
+		while(false !== ( $file = readdir($dir)) ) { 
+			if (( $file != '.' ) && ( $file != '..' )) { 
+				if ( is_dir($src . '/' . $file) ) { 
+					recurse_copy($src . '/' . $file,$dst . '/' . $file); 
+				} 
+				else { 
+					copy($src . '/' . $file,$dst . '/' . $file); 
+				} 
+			} 
+		} 
+		closedir($dir); 
+	} 
+	
 	$directories = scandir($globalRoot);
 	$ignore = array('.', '..', 'dev', 'img', '.git');
 	$i = 0;
@@ -85,4 +101,6 @@
 		makePage($dir);
 	}
 	makePage("");
+	copy($globalRoot.'style.css', $globalRemoteRoot.'style.css');
+	recurse_copy($globalRoot.'img', $globalRemoteRoot.'img')
 ?>
