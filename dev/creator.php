@@ -1,48 +1,4 @@
 <?php
-	function getDirectory( $path = '.', $level = 0 ){ 
-
-    $ignore = array( 'cgi-bin', '.', '..' ); 
-    // Directories to ignore when listing output. Many hosts 
-    // will deny PHP access to the cgi-bin. 
-
-    $dh = @opendir( $path ); 
-    // Open the directory to the handle $dh 
-     
-    while( false !== ( $file = readdir( $dh ) ) ){ 
-    // Loop through the directory 
-     
-        if( !in_array( $file, $ignore ) ){ 
-        // Check that this file is not to be ignored 
-             
-            $spaces = str_repeat( '&nbsp;', ( $level * 4 ) ); 
-            // Just to add spacing to the list, to better 
-            // show the directory tree. 
-             
-            if( is_dir( "$path/$file" ) ){ 
-            // Its a directory, so we need to keep reading down... 
-             
-                echo "$file\n"; 
-                getDirectory( "$path/$file", ($level+1) ); 
-                // Re-call this same function but on a new directory. 
-                // this is what makes function recursive. 
-             
-            } else { 
-             
-                echo "$file\n"; 
-                // Just print out the filename 
-             
-            } 
-         
-        } 
-     
-    } 
-     
-    closedir( $dh ); 
-    // Close the directory handle 
-
-} 
-	
-	
 	/*
 	function makePage()
 	makePage takes a provided HTML content file, parses any PHP code in it, and 
@@ -52,6 +8,7 @@
 		$globalRoot - global root directory on the local machine
 		$globalRemoteRoot - global root directory on the remote machine
 		$globalGeneratedRoot - directory on the local machine to output the generated files to
+	
 		$page - path to the local page template, relative to the global root
 		$content - contents of the HTML page that is being parsed
 		$output - the parse output written to the HTML file
@@ -91,6 +48,23 @@
 		echo $status."\n";
 	}
 	
+	function listDirectoryRecursive( $path = '.', $level = 0 ) {
+		global $dirs, $i;
+		$ignore = array( '.', '..' );
+		$dh = @opendir( $path );
+		while ( false !== ( $file = readdir( $dh) ) ) {
+			if ( !in_array( $file, $ignore ) ) {
+				if ( is_dir( "$path/$file" ) ) {
+					$dirs[$i] = "$path/$file";
+					$i++;
+					listDirectoryRecursive ( "$path/$file", $level + 1 );
+				}
+			}
+		}
+	}
+	
 	makePage("dev/");
-	getDirectory($globalRoot);
+	$i = 0;
+	listDirectoryRecursive($globalRoot.'Om Partiet');
+	echo $dirs[0];
 ?>
