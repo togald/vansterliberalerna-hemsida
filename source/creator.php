@@ -1,16 +1,11 @@
 <?php
 	/*
-	function makePage()
-	makePage takes a provided HTML content file, parses any PHP code in it, and 
-	uses a skel file to create a raw HTML page from it. 
-	
-	Variables:
+	Global variables:
 		$Source - global root directory on the local machine
 		$Content - path to the content template directory
 		$URL - global root directory on the remote machine
 		$Target - directory on the local machine to output the generated files to
 		$Dirs - array containing all directories that will be used to store HTML files, relative to the actual root directory
-		$i - used to store the current working index of the $Dirs array. There are better ways of doing this. 
 		
 		IMPORTANT!
 		The $URL variable is defined twice. Once for the local path, and once for the remote path, i.e. the URL to the webpage. Be sure to comment out the one you're not using at the moment! 
