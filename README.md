@@ -9,11 +9,17 @@ Vänsterliberalerna är ett politiskt parti stationerat i Uppsala, Sverige. Dett
 - source/ innehåller stilmall, statiska bilder och PHP-skript som genererar sidan som den ser ut på webbhotellet sen. 
 - target/ innehåller den färdiga webbsidan. Innehållet i denna mapp är det som synkroniseras till webbhotellet. 
 
-TODO: 
+###todo: 
 - Revidera och sedan godkänna stilmallen i partistyrelsen
 - Bestämma vad som ska finnas på sidan förutom info om politiken
 - Skapa sidor med faktiskt innehåll
 - Publicera!
+
+###Layoutfunderingar:
 - Sidebar? Medlemsinloggning, nyhetsflöde, kontaktinfo...?
 - Ska sidebaren vara statisk, eller ändras beroende på vilken sida som besöks?
+
+###PHP-funderingar:
+- `$root` är osmidig, det måste gå att automatisera! Kanske genom den globala arrayen `$Root` som använder sig av `$level`?
+- Det behövs en manual. Detta skall skapas!
 - Automatiskt skript för att generera menyerna på sidan
