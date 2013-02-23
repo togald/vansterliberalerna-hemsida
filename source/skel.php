@@ -50,7 +50,8 @@
 			<span id="navbutton" onclick="toggle('nav')"> ≡ </span>
 			<nav id="nav">
 				<ul>
-					<li><a href="">Hem</a>
+					<li><a href="<?php echo $URL ?>">Hem</a>
+					<li><a href="<?php echo $URL ?>stilmall/">Stilmall</a>
 					<li><a href="">Politik</a>
 						<ul>
 							<li><a href="">Värdegrund</a>

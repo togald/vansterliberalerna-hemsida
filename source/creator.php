@@ -19,6 +19,7 @@
 	$Source = '/home/mfserver/ramdisk/source/';
 	$Content = '/home/mfserver/ramdisk/content/';
 	$URL = 'http://vansterliberalerna.comeze.com/';
+	//$URL = '/home/mfserver/ramdisk/target/';
 	$Target = '/home/mfserver/ramdisk/target/';
 	$Dirs;
 	$i;
@@ -92,14 +93,14 @@
 	$ignore = array('.', '..');
 	$i = 0;
 	foreach ( $directories as $directory ) {
-		if ( !in_array( $directory, $ignore ) && is_dir( $Source.$directory ) ) {
+		if ( !in_array( $directory, $ignore ) && is_dir( $Content.$directory ) ) {
 			$Dirs[$i] = $directory;
 			$i++;
 			listDirectoryRecursive($Content.$directory);
 		}
 	}
 	foreach ( $Dirs as $dir ) {
-		makePage($dir);
+		makePage("$dir/");
 	}
 	
 	makePage("");
