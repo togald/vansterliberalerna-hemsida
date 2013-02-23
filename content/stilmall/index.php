@@ -1,5 +1,5 @@
 <?php
-	$title = "Stilmall - Vänsterliberalerna";
+	$title = "Stilmall";
 ?>
 
 		<h1>Stilmall</h1>

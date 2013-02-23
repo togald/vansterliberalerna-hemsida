@@ -43,6 +43,11 @@
 			include $Content.$page.'index.php';
 			$content = ob_get_clean();
 			
+			// Check if the file is /index.php, if not, append " - Vänsterliberalerna" to $title
+			if ( $page != "" ) {
+				$title .= " - Vänsterliberalerna";
+			}
+			
 			// Include the skel file, and save the output
 			ob_start();
 			include $Source.'skel.php';
@@ -59,7 +64,7 @@
 			fclose($file);
 			$status = "Created ".$page."index.html";
 		} else {
-			$status = "ERROR: No template avaliable for $page/";
+			$status = "ERROR: No template avaliable for $page";
 		}
 		
 		echo "$status\n";

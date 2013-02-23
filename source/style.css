@@ -45,6 +45,21 @@ li {
 	margin: 0 16pt 3pt 10pt; 
 }
 
+dl {
+	margin: 0 0 15pt 0;
+}
+
+dt {
+	margin: 2pt 12pt 0 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+dd {
+	margin: 1pt 20pt 0 0;
+	padding: 0;
+}
+
 .strong {
 	font-style: italic;
 	font-weight: bold;
@@ -61,7 +76,7 @@ header, #content, footer {
 /* Header styling */
 #bgcolor {
 	position: absolute;
-	background-color: #f00;
+	background-color: #d00;
 	height: 96px;
 	width: 100%;
 	top: 0;
@@ -138,13 +153,13 @@ nav {
 	}
 	
 	nav li a:hover, nav li a:active {
-		color: #f00;
+		color: #d00;
 		background-color: #fff;
 	}
 	
 	nav ul li ul {
 		display: none;
-		border-left: 5px solid #f00;
+		border-left: 5px solid #d00;
 		margin-top: -2pt;
 	}
 	
@@ -159,7 +174,7 @@ nav {
 		float: none;
 		position: relative;
 		display: list-item;
-		background-color: #f00;
+		background-color: #d00;
 	}
 	
 	nav ul li ul li a:link, nav ul li ul li a:visited {
@@ -228,7 +243,7 @@ footer a:hover, footer a:active {
 	
 	nav a:link, nav a:visited {
 		color: #fff;
-		background-color: #f00;
+		background-color: #d00;
 		display: block;
 		width: 100%;
 		padding: 3pt;
@@ -237,7 +252,7 @@ footer a:hover, footer a:active {
 	}
 	
 	nav a:hover, nav a:active {
-		color: #f00;
+		color: #d00;
 		background-color: #fff;
 	}
 	
@@ -246,7 +261,7 @@ footer a:hover, footer a:active {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: #f00;
+		background-color: #d00;
 	}
 	
 	nav ul li, nav ul li ul li {
