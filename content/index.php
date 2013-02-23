@@ -1,6 +1,5 @@
 <?php
 	$title = "Vänsterliberalerna - nya tider ger ny politik";
-	$root = "";
 ?>
 
 		<h1>Välkommen till Vänsterliberalernas officiella hemsida, development-versionen!</h1>
