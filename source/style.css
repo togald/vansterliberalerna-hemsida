@@ -1,5 +1,6 @@
 body {
 	font-family: arial narrow, helvetica, liberation sans, sans-serif;
+	font-size: 11pt;
 	margin: 0;
 	padding: 0;
 }
@@ -31,9 +32,10 @@ a:hover, a:active {
 
 p {
 	margin: 0 0 14pt; 
+	font-size: 11pt;
 }
 
-ul, ol {
+ul, ol, dl {
 	margin: 4pt 0 10pt; 
 }
 
@@ -42,7 +44,16 @@ ul {
 }
 
 li {
-	margin: 0 16pt 3pt 10pt; 
+	margin: 0 12pt 3pt 0; 
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0;
+	padding-left: 17pt;
 }
 
 .strong {

@@ -16,11 +16,11 @@
 		The $URL variable is defined twice. Once for the local path, and once for the remote path, i.e. the URL to the webpage. Be sure to comment out the one you're not using at the moment! 
 	*/
 	
-	$Source = '/home/mfserver/ramdisk/source/';
-	$Content = '/home/mfserver/ramdisk/content/';
+	$Source = '/home/mfserver/ramdisk/web/source/';
+	$Content = '/home/mfserver/ramdisk/web/content/';
 	$URL = 'http://vansterliberalerna.comeze.com/';
 	//$URL = '/home/mfserver/ramdisk/target/';
-	$Target = '/home/mfserver/ramdisk/target/';
+	$Target = '/home/mfserver/ramdisk/web/target/';
 	$Dirs;
 	$i;
 	
