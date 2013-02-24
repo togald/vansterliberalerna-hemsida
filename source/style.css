@@ -1,6 +1,6 @@
 body {
 	font-family: arial narrow, helvetica, liberation sans, sans-serif;
-	font-size: 11pt;
+	font-size: 10pt;
 	margin: 0;
 	padding: 0;
 }
@@ -31,8 +31,7 @@ a:hover, a:active {
 }
 
 p {
-	margin: 0 0 14pt; 
-	font-size: 11pt;
+	margin: 0 0 14pt;
 }
 
 ul, ol, dl {
@@ -204,7 +203,10 @@ footer {
 	margin-top: 7pt;
 	padding: 4pt;
 	text-align: center;
-	font-size: 90%;
+}
+
+footer p {
+	font-size: 9pt;
 }
 
 footer a:link, footer a:visited {
