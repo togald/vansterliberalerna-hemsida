@@ -49,18 +49,30 @@
 			<h2>Nya tider ger ny politik</h2>
 			<span id="navbutton" onclick="toggle('nav')"> ≡ </span>
 			<nav id="nav">
+				<?php /* 
+					Detta är menyn, den kan behöva ändras om mappstrukturen ändras. Ett menyavsnitt ska se ut så här:
+					<li><a href"<?php echo $URL ?>sökväg/till/sidan/">Titel</a>
+					
+					För copypaste-fan: 
+					<li><a href="<?php echo $URL ?>"></a>
+					
+					För att skapa en undermeny, lägg bara till <ul> i början av undermenyn och sedan </ul> när den ska vara slut. Exempel: 
+					<li><a href="">Menyelement med submeny</a>
+						<ul>
+							<li><a href="">Undermeny</a>
+							<li><a href="">Mer undermeny</a>
+							<li><a href="">Ännu mer undermeny</a>
+						</ul>
+					<li><a href="">Nästa element</a>
+				*/ ?>
 				<ul>
 					<li><a href="<?php echo $URL ?>">Hem</a>
 					<li><a href="<?php echo $URL ?>stilmall/">Stilmall</a>
-					<li><a href="">Politik</a>
+					<li><a href="<?php echo $URL ?>manual">Manual</a>
 						<ul>
-							<li><a href="">Värdegrund</a>
-							<li><a href="">VL på 5 minuter</a>
-							<li><a href="">Politiska frågor</a>
+							<li><a href="<?php echo $URL ?>manual/kataloger">Kataloger</a>
+							<li><a href="<?php echo $URL ?>manual/arbetsflöde/">Arbetsflöde</a>
 						</ul>
-					<li><a href="">Om partiet</a>
-					<li><a href="">Styrelsen</a>
-					<li><a href="">Press</a>
 				</ul>
 			</nav>
 		</div>

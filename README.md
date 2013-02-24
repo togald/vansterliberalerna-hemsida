@@ -19,9 +19,3 @@ Vänsterliberalerna är ett politiskt parti stationerat i Uppsala, Sverige. Dett
 ###Layoutfunderingar: 
 - Sidebar? Medlemsinloggning, nyhetsflöde, kontaktinfo...?
 - Ska sidebaren vara statisk, eller ändras beroende på vilken sida som besöks?
-
-###PHP-funderingar: 
-- `$root` är osmidig, det måste gå att automatisera! Kanske genom den globala arrayen `$Root` som använder sig av `$level`?
-- Det behövs en manual. Detta skall skapas!
-- Automatiskt skript för att generera menyerna på sidan
-

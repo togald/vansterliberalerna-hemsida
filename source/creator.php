@@ -1,16 +1,11 @@
 <?php
 	/*
-	function makePage()
-	makePage takes a provided HTML content file, parses any PHP code in it, and 
-	uses a skel file to create a raw HTML page from it. 
-	
-	Variables:
+	Global variables:
 		$Source - global root directory on the local machine
 		$Content - path to the content template directory
 		$URL - global root directory on the remote machine
 		$Target - directory on the local machine to output the generated files to
 		$Dirs - array containing all directories that will be used to store HTML files, relative to the actual root directory
-		$i - used to store the current working index of the $Dirs array. There are better ways of doing this. 
 		
 		IMPORTANT!
 		The $URL variable is defined twice. Once for the local path, and once for the remote path, i.e. the URL to the webpage. Be sure to comment out the one you're not using at the moment! 
@@ -19,10 +14,9 @@
 	$Source = '/home/mfserver/ramdisk/web/source/';
 	$Content = '/home/mfserver/ramdisk/web/content/';
 	$URL = 'http://vansterliberalerna.comeze.com/';
-	//$URL = '/home/mfserver/ramdisk/target/';
+	//$URL = '/home/mfserver/ramdisk/web/target/';
 	$Target = '/home/mfserver/ramdisk/web/target/';
-	$Dirs;
-	$i;
+	$Dirs = array();
 	
 	/*
 	makePage() is used to parse the contents of a template file, include it in a skeleton and output the resulting code to a raw HTML file in the $Target directory. 
@@ -44,6 +38,11 @@
 			include $Content.$page.'index.php';
 			$content = ob_get_clean();
 			
+			// Check if the file is /index.php, if not, append " - Vänsterliberalerna" to $title
+			if ( $page != "" ) {
+				$title .= " - Vänsterliberalerna";
+			}
+			
 			// Include the skel file, and save the output
 			ob_start();
 			include $Source.'skel.php';
@@ -58,9 +57,9 @@
 			$file = fopen($Target.$page.'index.html','w');
 			fwrite($file, $output);
 			fclose($file);
-			$status = "Successfully created $page/index.html";
+			$status = "Created ".$page."index.html";
 		} else {
-			$status = "No template avaliable for $page/";
+			$status = "ERROR: No template avaliable for $page";
 		}
 		
 		echo "$status\n";
@@ -76,9 +75,9 @@
 	$file - temporary iteration variable that references the current file in the $path
 	*/
 	
-	function listDirectoryRecursive( $path = '.', $level = 0 ) {
+	function listDirectoryRecursive( $path = '.', $level = 1 ) {
 		// Import needed global variables
-		global $Dirs, $i;
+		global $Dirs;
 		
 		// List of directories to ignore
 		$ignore = array( '.', '..' );
@@ -87,8 +86,7 @@
 		$dh = @opendir( $path );
 		while ( false !== ( $file = readdir( $dh ) ) ) {
 			if ( !in_array( $file, $ignore ) && is_dir( "$path/$file" ) ) {
-				$Dirs[$i] = "$path/$file";
-				$i++;
+				$Dirs[count($Dirs)] = "$path/$file/";
 				
 				// Call the function again to loop through the subdirectories of the subdirectory...
 				listDirectoryRecursive ( "$path/$file", $level + 1 );
@@ -121,24 +119,22 @@
 	
 	$directories = scandir($Content);
 	$ignore = array('.', '..');
-	$i = 0;
 	foreach ( $directories as $directory ) {
 		if ( !in_array( $directory, $ignore ) && is_dir( $Content.$directory ) ) {
-			$Dirs[$i] = $directory;
-			$i++;
+			$Dirs[count($Dirs)] = $Content.$directory.'/';
 			listDirectoryRecursive($Content.$directory);
 		}
 	}
 	foreach ( $Dirs as $dir ) {
-		makePage("$dir/");
+		makePage(str_replace($Content, "", $dir));
 	}
 	
 	makePage("");
 	if ( copy($Source.'style.css', $Target.'style.css') ) {
-		echo "Successfully copied /style.css\n";
+		echo "Copied /style.css\n";
 	} else {
 		echo "ERROR: /style.css could not be copied\n";
 	}
 	recurse_copy($Source.'img', $Target.'img');
-	echo "Successfully copied /img/\n";
+	echo "Copied /img/\n";
 ?>
