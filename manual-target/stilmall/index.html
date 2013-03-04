@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Stilmall - Vänsterliberalerna</title>
+	
+	<meta name="author" content="Togald Nilsson">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<link rel="stylesheet" href="http://vansterliberalerna.comeze.com/style.css" type="text/css">
+	<link rel="shortcut icon" href="http://vansterliberalerna.comeze.com/img/favicon.ico" type="image/gif">
+	<script type="text/javascript">
+		function printMail() {
+			var address = "togald.nilsson";
+			var domain = "gmail";
+			var suffix = "com";
+			document.getElementById("authorEmail").href = "mailto:" + address + "@" + domain + "." + suffix;
+			document.getElementById("authorEmail").innerHTML = address + "@" + domain + "." + suffix;
+			visible = 0;
+		}
+		function show(x) {
+			document.getElementById(x).style.visibility = "visible";
+		}
+		function hide(x) {
+			document.getElementById(x).style.visibility = "hidden";
+		}
+		function toggle(x) {
+			if (visible == 0) {
+				document.getElementById(x).className = "expanded";
+				visible = 1;
+			}
+			else {
+				document.getElementById(x).className = "";
+				visible = 0;
+			}
+		}
+	</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body onload="printMail()">
+	<div id="bgcolor"></div>
+	<header>
+		<div id="hgroup">
+			<h1><a href="" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
+			<h2>Nya tider ger ny politik</h2>
+			<span id="navbutton" onclick="toggle('nav')"> ≡ </span>
+			<nav id="nav">
+								<ul>
+					<li><a href="http://vansterliberalerna.comeze.com/">Hem</a>
+					<li><a href="http://vansterliberalerna.comeze.com/stilmall/">Stilmall</a>
+					<li><a href="http://vansterliberalerna.comeze.com/manual">Manual</a>
+						<ul>
+							<li><a href="http://vansterliberalerna.comeze.com/manual/kataloger">Kataloger</a>
+							<li><a href="http://vansterliberalerna.comeze.com/manual/arbetsflöde/">Arbetsflöde</a>
+						</ul>
+				</ul>
+			</nav>
+		</div>
+		<object data="http://vansterliberalerna.comeze.com/img/icon.svg" type="image/svg+xml">
+			<img src="http://vansterliberalerna.comeze.com/img/icon.png" height="96" width="96" alt="Vänsterliberalernas logotyp">
+		</object>
+	</header>
+	<div id="content">
+		
+		<h1>Stilmall</h1>
+		<p>Detta dokument visar och beskriver hur Vänsterliberalernas hemsidas stilmall ser ut. Stilmallen finns lagrad i filen <tt>style.css</tt>. För att göra ord i den löpande texten i fetstil eller kursiv stil, använd lämpliga XHTML-taggar, till exempel <strong>&lt;strong&gt;</strong> eller <em>&lt;em&gt;</em>.
+		
+		<p class="strong">Detta stycke är starkt markerat. Det centreras och markeras med fet kursiv text. Det åstadkoms genom att tilldela ett stycke klassen strong. 
+		
+		<h2>Listor</h2>
+		<p>Listor kan vara väldigt bra att ha ibland, särskilt för att skapa ordning i kaos. För att visa det ska jag därför demonstrera två listor nedan. 
+		
+		<h3>En oordnad lista, &lt;ul&gt;</h3>
+		<ul>
+			<li>En lista, LaTeX-motsvarigheten är "itemize".</li>
+			<li>Listor kan vara bra att ha ibland. </li>
+			<li>Nu börjar jag få slut på saker att skriva i listan. Lorem ipsum. </li>
+		</ul>
+		
+		<h3>En ordnad lista, &lt;ol&gt;</h3>
+		<ol>
+			<li>En lista, LaTeX-motsvarigheten är "Enumerate".
+			<li>Listor kan vara bra att ha ibland, för att hålla ordning. 
+			<li>Nu börjar jag få slut på saker att skriva i listan. 
+		</ol>
+		
+		<h2>En mellanrubrik</h2>
+		<p>Ett stycke ser ut så här. För att bättre visa hur stycken beter sig i löpande text kommer här en Lorem Ipsum. 
+		
+		<h3>Lorem ipsum</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci mi, elementum ac placerat vel, ornare non neque. Morbi porta scelerisque nunc, vel imperdiet augue ornare at. Vestibulum eu ante tortor, rhoncus sollicitudin nibh. Praesent ornare molestie tristique. Duis dapibus lacinia nunc eget blandit. Proin et diam porta purus viverra aliquam. Curabitur quam sapien, consequat eget pretium in, sagittis id ante. Nullam ut orci vel lectus tincidunt vehicula. Etiam consectetur, velit et condimentum posuere, orci mi laoreet nibh, sit amet lobortis sapien nunc ac elit. Donec lobortis elit sed dolor pellentesque vitae ultricies lorem mattis. Nunc a orci eu lacus faucibus vestibulum.
+		
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci mi, elementum ac placerat vel, ornare non neque. Morbi porta scelerisque nunc, vel imperdiet augue ornare at. Vestibulum eu ante tortor, rhoncus sollicitudin nibh. Praesent ornare molestie tristique. Duis dapibus lacinia nunc eget blandit. Proin et diam porta purus viverra aliquam. Curabitur quam sapien, consequat eget pretium in, sagittis id ante. Nullam ut orci vel lectus tincidunt vehicula. Etiam consectetur, velit et condimentum posuere, orci mi laoreet nibh, sit amet lobortis sapien nunc ac elit. Donec lobortis elit sed dolor pellentesque vitae ultricies lorem mattis. Nunc a orci eu lacus faucibus vestibulum.
+		
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla aliquam nisl sit amet metus hendrerit pharetra et eu purus. Duis consectetur, velit pulvinar fermentum blandit, leo risus molestie odio, ut interdum justo sem ac ipsum. Quisque orci diam, feugiat nec luctus eget, accumsan a tellus. Etiam porta odio aliquam libero consequat eu congue odio faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a congue augue. Aliquam urna lectus, imperdiet et hendrerit vitae, tempus malesuada nibh. Duis ut elit non sapien laoreet ultrices.	</div>
+	<footer>
+		<p>Webbansvarig: Togald Nilsson, <a href="" id="authorEmail">Togald Nilsson</a><br>
+		Källkoden till sidan distribueras under <a href="http://sam.zoy.org/wtfpl/">WTFPL-licensen</a>, och finns på <a href="https://github.com/MFserver/vansterliberalerna-hemsida">GitHub</a> för nedladdning. Copyright är för mesar. </p>
+	</footer>
+</body>
+</html>
