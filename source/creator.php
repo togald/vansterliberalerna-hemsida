@@ -12,10 +12,10 @@
 	*/
 	
 	$Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
-	$Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/content/';
+	$Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/manual-content/';
 	$URL = 'http://vansterliberalerna.comeze.com/';
 	//$URL = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/target/';
-	$Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/target/';
+	$Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/manual-target/';
 	$Dirs = array();
 	
 	/*
