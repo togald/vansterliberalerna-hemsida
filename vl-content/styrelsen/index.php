@@ -2,5 +2,5 @@
 	$title = "Styrelsen";
 ?>
 
-		<h1></h1>
+		<h1><?php echo $title ?></h1>
         <p>

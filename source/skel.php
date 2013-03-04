@@ -75,7 +75,7 @@
                             <li><a href="<?php echo $URL ?>politik/invandring/">Invandring</a>
                             <li><a href="<?php echo $URL ?>politik/miljo/">Miljö</a>
                             <li><a href="<?php echo $URL ?>politik/rattsvasende/">Rättsväsende</a>
-                            <li><a href="<?php echo $URL ?>politik/skatter/">Skatter</a>
+                            <li><a href="<?php echo $URL ?>politik/skatter/">Skatter och bidrag</a>
                             <li><a href="<?php echo $URL ?>politik/utbildning/">Utbildning</a>
                             <li><a href="<?php echo $URL ?>politik/vard/">Vård och omsorg</a>
                         </ul>
