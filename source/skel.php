@@ -67,12 +67,31 @@
 				*/ ?>
 				<ul>
 					<li><a href="<?php echo $URL ?>">Hem</a>
-					<li><a href="<?php echo $URL ?>stilmall/">Stilmall</a>
-					<li><a href="<?php echo $URL ?>manual">Manual</a>
-						<ul>
-							<li><a href="<?php echo $URL ?>manual/kataloger">Kataloger</a>
-							<li><a href="<?php echo $URL ?>manual/arbetsflöde/">Arbetsflöde</a>
-						</ul>
+					<li><a href="<?php echo $URL ?>politik/">Politik</a>
+                        <ul>
+                            <li><a href="<?php echo $URL ?>politik/bistand/">Bistånd</a>
+                            <li><a href="<?php echo $URL ?>politik/forsvar/">Försvar</a>
+                            <li><a href="<?php echo $URL ?>politik/immaterialratt/">Immaterialrätt</a>
+                            <li><a href="<?php echo $URL ?>politik/invandring/">Invandring</a>
+                            <li><a href="<?php echo $URL ?>politik/miljo/">Miljö</a>
+                            <li><a href="<?php echo $URL ?>politik/rattsvasende/">Rättsväsende</a>
+                            <li><a href="<?php echo $URL ?>politik/skatter/">Skatter</a>
+                            <li><a href="<?php echo $URL ?>politik/utbildning/">Utbildning</a>
+                            <li><a href="<?php echo $URL ?>politik/vard/">Vård och omsorg</a>
+                        </ul>
+                    <li><a href="<?php echo $URL ?>vardegrund/">Värdegrund</a>
+                    <li><a href="<?php echo $URL ?>styrelsen/">Styrelsen</a>
+                        <ul>
+                            <li><a href="<?php echo $URL ?>styrelsen/bard/">Bard Nilsson (ordförande)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/togald/">Togald Nilsson (sekreterare)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/alexander/">Alexander Van Dam (kassör)</a>
+                        </ul>
+                    <li><a href="<?php echo $URL ?>om/">Om partiet</a>
+                        <ul>
+                            <li><a href="<?php echo $URL ?>om/stadgar/">Stadgar</a>
+                            <li><a href="<?php echo $URL ?>om/stadgar/stadgar.pdf">Ladda ner stadgar (PDF)</a>
+                        </ul>
+                    <li><a href="<?php echo $URL ?>press/">Press</a>
 				</ul>
 			</nav>
 		</div>
