@@ -13,8 +13,8 @@
     
     $Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
     $Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-content/';
-    $URL = 'http://vansterliberalerna.comeze.com/';
-    //$URL = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
+    //$URL = 'http://vansterliberalerna.comeze.com/';
+    $URL = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
     $Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
     $Dirs = array();
     
@@ -124,7 +124,7 @@
     } 
     
     /*
-    This code will be dealt with later. I'm tired. 
+    This is like the main method, i.e. the code that is executed when this file is run. It checks the $Content directory, creates a list of all directories in the $Content directory and any subdirs, and then makes an index page for every directory. Then, a root index page is generated, and style.css, and the img/ directory is copied to the $Target location. 
     */
     
     $directories = scandir($Content);
