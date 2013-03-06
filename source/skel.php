@@ -45,7 +45,7 @@
 	<div id="bgcolor"></div>
 	<header>
 		<div id="hgroup">
-			<h1><a href="" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
+			<h1><a href="<?php echo $URL ?>index.html" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
 			<h2>Nya tider ger ny politik</h2>
 			<span id="navbutton" onclick="toggle('nav')"> ≡ </span>
 			<nav id="nav">
@@ -66,32 +66,32 @@
 					<li><a href="">Nästa element</a>
 				*/ ?>
 				<ul>
-					<li><a href="<?php echo $URL ?>">Hem</a>
-					<li><a href="<?php echo $URL ?>politik/">Politik</a>
+					<li><a href="<?php echo $URL ?>index.html">Hem</a>
+					<li><a href="<?php echo $URL ?>politik/index.html">Politik</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>politik/bistand/">Bistånd</a>
-                            <li><a href="<?php echo $URL ?>politik/forsvar/">Försvar</a>
-                            <li><a href="<?php echo $URL ?>politik/immaterialratt/">Immaterialrätt</a>
-                            <li><a href="<?php echo $URL ?>politik/invandring/">Invandring</a>
-                            <li><a href="<?php echo $URL ?>politik/miljo/">Miljö</a>
-                            <li><a href="<?php echo $URL ?>politik/rattsvasende/">Rättsväsende</a>
-                            <li><a href="<?php echo $URL ?>politik/skatter/">Skatter och bidrag</a>
-                            <li><a href="<?php echo $URL ?>politik/utbildning/">Utbildning</a>
-                            <li><a href="<?php echo $URL ?>politik/vard/">Vård och omsorg</a>
+                            <li><a href="<?php echo $URL ?>politik/bistand/index.html">Bistånd</a>
+                            <li><a href="<?php echo $URL ?>politik/forsvar/index.html">Försvar</a>
+                            <li><a href="<?php echo $URL ?>politik/immaterialratt/index.html">Immaterialrätt</a>
+                            <li><a href="<?php echo $URL ?>politik/invandring/index.html">Invandring</a>
+                            <li><a href="<?php echo $URL ?>politik/miljo/index.html">Miljö</a>
+                            <li><a href="<?php echo $URL ?>politik/rattsvasende/index.html">Rättsväsende</a>
+                            <li><a href="<?php echo $URL ?>politik/skatter/index.html">Skatter och bidrag</a>
+                            <li><a href="<?php echo $URL ?>politik/utbildning/index.html">Utbildning</a>
+                            <li><a href="<?php echo $URL ?>politik/vard/index.html">Vård och omsorg</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>vardegrund/">Värdegrund</a>
-                    <li><a href="<?php echo $URL ?>styrelsen/">Styrelsen</a>
+                    <li><a href="<?php echo $URL ?>vardegrund/index.html">Värdegrund</a>
+                    <li><a href="<?php echo $URL ?>styrelsen/index.html">Styrelsen</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>styrelsen/bard/">Bard Nilsson (ordförande)</a>
-                            <li><a href="<?php echo $URL ?>styrelsen/togald/">Togald Nilsson (sekreterare)</a>
-                            <li><a href="<?php echo $URL ?>styrelsen/alexander/">Alexander Van Dam (kassör)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/bard/index.html">Bard Nilsson (ordförande)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/togald/index.html">Togald Nilsson (sekreterare)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/alexander/index.html">Alexander Van Dam (kassör)</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>om/">Om partiet</a>
+                    <li><a href="<?php echo $URL ?>om/index.html">Om partiet</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>om/stadgar/">Stadgar</a>
+                            <li><a href="<?php echo $URL ?>om/stadgar/index.html">Stadgar</a>
                             <li><a href="<?php echo $URL ?>om/stadgar/stadgar.pdf">Ladda ner stadgar (PDF)</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>press/">Press</a>
+                    <li><a href="<?php echo $URL ?>press/index.html">Press</a>
 				</ul>
 			</nav>
 		</div>
