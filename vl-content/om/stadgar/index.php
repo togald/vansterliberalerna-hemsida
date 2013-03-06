@@ -3,7 +3,7 @@
 ?>
 
 		<h1><?php echo $title ?></h1>
-        <p>
+        <p>Dessa stadgar antogs på Vänsterliberalernas styrelsemöte den 29 januari 2013, som också var partiets bildandemöte. 
         <ol>
             <li> Föreningens namn är Vänsterliberalerna, med säte i Uppsala. 
             <li> Vi är ett politiskt parti, vi vill sprida vår politik främst på nationell, men även internationell nivå. Politiken finns beskriven i ett politiskt program (se separat dokument). 

@@ -90,6 +90,7 @@
                         <ul>
                             <li><a href="<?php echo $URL ?>om/stadgar/index.html">Stadgar</a>
                             <li><a href="<?php echo $URL ?>om/stadgar/stadgar.pdf">Ladda ner stadgar (PDF)</a>
+                            <li><a href="<?php echo $URL ?>om/protokoll/index.html">Mötesprotokoll</a>
                         </ul>
                     <li><a href="<?php echo $URL ?>press/index.html">Press</a>
 				</ul>

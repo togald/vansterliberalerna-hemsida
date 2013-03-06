@@ -14,8 +14,8 @@
     $Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
     $Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-content/';
     //$URL = 'http://vansterliberalerna.comeze.com/';
-    $URL = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
     $Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
+    $URL = $Target;
     $Dirs = array();
     
     /*
@@ -30,6 +30,17 @@
     function makePage($page) {
         // Import global variables
         global $Source, $Content, $URL, $Target;
+        
+        //first, copy all extra files to the target directory. All files named "index*" are treated as to be used by the page maker as dependencies for index.php, all other files are simply copied bitwise to the $Target location. 
+        $dh = @opendir( $Content.$page );
+        while ( false !== ( $file = readdir( $dh ) ) ) {
+            if ( !is_dir($Content.$page.$file) ) {
+                if ( substr( $file, 0, 5 ) != "index" ) {
+                    copy( $Content.$page.$file, $Target.$page.$file );
+                    echo "Copied ".$page.$file."\n";
+                }
+            }
+        }
         
         // Check if an index file exists before doing anything
         if ( file_exists($Content.$page.'index.php') ) {
@@ -60,16 +71,6 @@
             $status = "Created ".$page."index.html";
         } else {
             $status = "ERROR: No template avaliable for $page";
-        }
-        
-        $dh = @opendir( $Content.$page );
-        while ( false !== ( $file = readdir( $dh ) ) ) {
-            if ( !is_dir($Content.$page.$file) ) {
-                if ( substr( $file, 0, 5 ) != "index" ) {
-                    copy( $Content.$page.$file, $Target.$page.$file );
-                    echo "Copied ".$page.$file."\n";
-                }
-            }
         }
         
         echo "$status\n";
