@@ -13,9 +13,9 @@
     
     $Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
     $Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-content/';
-    //$URL = 'http://vansterliberalerna.comeze.com/';
     $Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/vl-target/';
-    $URL = $Target;
+    $URL = 'http://vansterliberalerna.comeze.com/';
+    //$URL = $Target;
     $Dirs = array();
     
     /*
@@ -36,6 +36,7 @@
         while ( false !== ( $file = readdir( $dh ) ) ) {
             if ( !is_dir($Content.$page.$file) ) {
                 if ( substr( $file, 0, 5 ) != "index" ) {
+                    if ( !is_dir( $Target.$page )) { mkdir($Target.$page); }
                     copy( $Content.$page.$file, $Target.$page.$file );
                     echo "Copied ".$page.$file."\n";
                 }
@@ -108,6 +109,7 @@
     /*
     recurse_copy() is copied directly from the PHP reference guide examples. The function is used to recursively copy a directory and all of it's content to a new location. 
     */
+    
     function recurse_copy($src,$dst) {
         $dir = opendir($src); 
         @mkdir($dst); 
