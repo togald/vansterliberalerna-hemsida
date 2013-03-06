@@ -1,0 +1,275 @@
+body {
+	font-family: arial narrow, helvetica, liberation sans, sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 15pt 0 7pt;
+	padding: 0;
+	text-align: center;
+	font-family: arial,helvetica;
+}
+
+h2 {
+	margin: 15pt 0 3pt;
+	padding: 0;
+}
+
+h3 {
+	margin: 15pt 0 3pt;
+	padding: 0;
+}
+
+a:link, a:visited {
+	color: navy; 
+}
+
+a:hover, a:active {
+	color: green; 
+}
+
+p {
+	margin: 0 0 14pt;
+}
+
+ul, ol, dl {
+	margin: 4pt 0 10pt; 
+}
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin: 0 12pt 3pt 0; 
+}
+
+dl {
+	margin: 0 0 15pt 0;
+}
+
+dt {
+	margin: 2pt 12pt 0 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0;
+	padding-left: 17pt;
+}
+
+.strong {
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	margin: 10pt auto 15pt;
+	max-width: 370pt;
+}
+
+header, #content, footer {
+	max-width: 600pt;
+	margin: auto;
+}
+
+/* Header styling */
+#bgcolor {
+	position: absolute;
+	background-color: #d00;
+	height: 96px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+header {
+	display: block;
+	height: 96px;
+}
+
+#hgroup {
+	float: left;
+	color: white;
+}
+
+header img, header object {
+	float: right;
+}
+
+#hgroup h1 {
+	margin: 0;
+	padding: 7pt 5pt 3pt;
+	text-align: left;
+	font-size: 26px;
+}
+
+#hgroup h2 {
+	padding: 0 5pt 6pt;
+	margin: 0;
+	font-size: 14px;
+	border-bottom: 1px solid white;
+}
+
+#hgroup h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav {
+	font-size: 14px;
+}
+
+@media screen and ( min-width: 551px ) {
+	#navbutton {
+		display: none;
+	}
+	
+	#nav {
+		display: block;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav ul li {
+		display: inline;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li a:link, nav li a:visited {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 3pt 12pt;
+		margin: 0;
+		display: block;
+	}
+	
+	nav li a:hover, nav li a:active {
+		color: #d00;
+		background-color: #fff;
+	}
+	
+	nav ul li ul {
+		display: none;
+		border-left: 5px solid #d00;
+		margin-top: -2pt;
+	}
+	
+	nav ul li:hover ul {
+		display: block;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav li ul li {
+		float: none;
+		position: relative;
+		display: list-item;
+		background-color: #d00;
+	}
+	
+	nav ul li ul li a:link, nav ul li ul li a:visited {
+		min-width: 40pt;
+	}
+} @media screen and ( max-width: 550px ) {
+	header object, header img {
+		display: none;
+	}
+	
+	#hgroup {
+		width: 100%;
+	}
+	
+	#hgroup h1 {
+		text-align: center;
+	}
+	
+	#hgroup h2 {
+		border: 0;
+		text-align: center;
+		
+	}
+	
+	#nav {
+		display: none;
+		width: 100%;
+	}
+	
+	#nav.expanded {
+		display: block;
+	}
+	
+	#navbutton {
+		display: block;
+		float: none;
+		cursor: pointer;
+		font-size: 24px;
+		padding-left: 4pt;
+		padding-right: 4pt;
+	}
+	
+	nav a:link, nav a:visited {
+		color: #fff;
+		background-color: #d00;
+		display: block;
+		width: 100%;
+		padding: 3pt;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	nav a:hover, nav a:active {
+		color: #d00;
+		background-color: #fff;
+	}
+	
+	nav ul, nav li ul {
+		display: list-item;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #d00;
+	}
+	
+	nav ul li, nav ul li ul li {
+		display: list-item;
+		list-style-type: none;
+		margin: 0 12pt;
+		padding: 0;
+	}
+}
+
+/* Special content styling */
+#content {
+	padding: 5pt;
+}
+
+footer {
+	border-top: 1px solid #777;
+	color: #777;
+	margin-top: 7pt;
+	padding: 4pt;
+	text-align: center;
+}
+
+footer p {
+	font-size: 9pt;
+}
+
+footer a:link, footer a:visited {
+	color: #77b;
+}
+
+footer a:hover, footer a:active {
+	color: green;
+}
