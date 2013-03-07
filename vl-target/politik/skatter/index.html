@@ -19,12 +19,6 @@
 			document.getElementById("authorEmail").innerHTML = address + "@" + domain + "." + suffix;
 			visible = 0;
 		}
-		function show(x) {
-			document.getElementById(x).style.visibility = "visible";
-		}
-		function hide(x) {
-			document.getElementById(x).style.visibility = "hidden";
-		}
 		function toggle(x) {
 			if (visible == 0) {
 				document.getElementById(x).className = "expanded";

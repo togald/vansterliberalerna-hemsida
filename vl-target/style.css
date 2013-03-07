@@ -247,6 +247,10 @@ nav {
 		margin: 0 12pt;
 		padding: 0;
 	}
+	
+	nav ul li ul li {
+        font-size: 10pt;
+	}
 }
 
 /* Special content styling */
