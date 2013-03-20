@@ -3,7 +3,7 @@
 ?>
 
 		<h1><?php echo $title ?></h1>
-        <p>Vi i Ny Liberalism vill driva kollektivtrafik skattefinansierat. Detta för att underlätta för både administration och passagerare, samt öka användningen av kollektivtrafiken för att göra en miljöinsats som betyder något. 
+        <p>Vi i Vänsterliberalerna vill driva kollektivtrafik skattefinansierat. Detta för att underlätta för både administration och passagerare, samt öka användningen av kollektivtrafiken för att göra en miljöinsats som betyder något. 
         
         <p>Vi vill skapa en rikstäckande standard för materialåtervinning, samt lagstadga om att källsorteringsmöjlighet för de vanligaste soporna (plast, papper, glas, metall, kompost och brännbart) måste finnas för samtliga hushåll i Sverige, enligt riksstandarden. Mindre vanliga sopor kommer fortfarande att tas omhand på återvinningsstationer, till exempel elektronik, glödlampor och batterier. 
         

@@ -1,5 +1,5 @@
 <?php
-	$title = "Politik";
+    $title = "Politik";
     $Dires = array();
     
     echo "        <h1>$title</h1>";
@@ -17,4 +17,5 @@
         $output = str_replace( "</h1>", "</h2>", str_replace( "<h1>", "<h2>", $output ) );
         echo $output;
     }
+    $title = "Politik";
 ?>

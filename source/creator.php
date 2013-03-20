@@ -50,6 +50,9 @@
             include $Content.$page.'index.php';
             $content = ob_get_clean();
             
+            //Make sure the content is properly indented
+            $content = "<!-- Page content starts here -->\n        ".str_replace("\n", "\n        ", $content)."\n\n        <!-- Page content ends here -->\n";
+            
             // Check if the file is /index.php, if not, append " - Vänsterliberalerna" to $title
             if ( $page != "" ) {
                 $title .= " - Vänsterliberalerna";
