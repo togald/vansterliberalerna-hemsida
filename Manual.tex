@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{amssymb, graphicx, fancyhdr, multirow, tikz}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.2pt}
+
+\author{Togald Nilsson}
+\title{\textbf{Manual för Vänsterliberalernas hemsida}}
+
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\pagebreak
+
+\section{Inledning}
+Vänsterliberalernas hemsida är inte som vilken hemsida som helst. Hemsidan skapas med en teknik som kan kallas developer-side PHP, vilket innebär att hemsidan genereras med hjälp av PHP av utvecklaren, innan den ens läggs upp på servern. Man kan säga att webbsidan måste kompileras innan den kan användas. PHP används av den anledningen att det är lätt att bädda in i HTML-koden. 
+
+Eftersom webbsidan i dagsläget bara använder PHP på utvecklarsidan, behövs ingen server med PHP installerat för att köra webbsidan. Däremot måste utvecklaren ha PHP installerat på sin dator. Det är möjligt att använda PHP för att generera dynamiskt innehåll på webbsidan också, mer om det i sektion \ref{server-side-php}.
+
+\section{Hur fungerar det?}
+Vänsterliberalernas hemsida har tre mappar, {\tt content/}, {\tt source/} och {\tt target/}. 
+
+\begin{itemize}
+	\item {\tt content/} innehåller mallar till alla de sidor som ska genereras. 
+	\item {\tt source/} innehåller alla källfiler, {\tt creator.php}, {\tt skel.php} och bilder, style sheets och så vidare som ska finnas på sidan. 
+	\item {\tt target/} är vanligtvis tom vid start. Det är i denna mapp som webbsidan genereras. 
+\end{itemize}
+
+{\tt source/creator.php} är den fil där all magi sker. Det är den som används för att kompilera mallarna till en fungerande webbsida. Filen är väl kommenterad, och dess arbetsordning beskrivs här. 
+
+\begin{enumerate}
+	\item Leta igenom {\tt content/} efter mallar, och kompilera en webbsida för varje mall som hittas med {\tt source/skel.php} som skelett. 
+	\item Placera mallfilen på motsvarande plats i {\tt target/}. Alla filer som inte är indexfiler kopieras utan behandling. 
+	\item Kopiera över bilder, style sheets och andra statiska dokument från {\tt source/} till {\tt target/}.
+\end{enumerate}
+
+\subsection{Struktur i {\tt content/}}
+För varje webbsida som ska skapas, måste en mapp med sidans namn skapas i {\tt content/}. I denna mapp skapas en fil {\tt intex.php}, som är den fil som används av {\tt source/creator.php} för att generera webbsidan. Indexfilen behöver inte innehålla någon struktur alls, förutom en deklaration av PHP-variabeln {\tt \$title} någonstans i dokumentet, förslagsvis i början. {\tt \$title} används för att skriva ut sidans titel i titelraden i webbläsaren. 
+
+Fördelarna med att använda mappar istället för HTML-sidor för att definiera strukturen, är framför allt att
+
+\begin{itemize}
+	\item URL-erna blir enklare, till exempel {\tt http://vl.mfserver.net/politik/} istället för {\tt http://vl.mfserver.net/politik.php}. Detta är viktigt framför allt för undersidor, som annars kan få mycket skumma URL-er. 
+	\item det gör det lättare att skapa undersidor till webbsidorna. Istället för att skapa en separat mapp för undersidor till en viss sida, lägger man bara alltsammans i sidans mapp. 
+\end{itemize}
+
+\subsection{Arbetsflödet}
+\begin{enumerate}
+	\item Klona webbsidan från GitHub. Du borde veta hur man gör det. Tips: {\tt git clone}. Om du redan har webbsidan lokalt kan du hoppa över det här steget. 
+	\item Redigera eller skapa de sidor du vill ha i {\tt content/}. Glöm inte att använda korrekt HTML5 och att deklarera PHP-variabeln {\tt \$title}. 
+	\item Öppna {\tt source/skel.php}, och leta dig fram till sektionen som definierar sidmenyn. Om du har skapat eller redigerat sidor som du vill ska synas i menyn, måste du uppdatera den manuellt. 
+	\item Öppna en terminal, och navigera till mappen dit du klonade hemsidan. 
+	\item Öppna {\tt source/creator.php} och kontrollera att variablerna {\tt \$Target} och {\tt \$URL} har värden som är rätt för ditt system. 
+	\item Kör {\tt php source/creator.php} i terminalen. Du borde få en utskrift av alla filer som den har behandlat och kopierat. 
+\end{enumerate}
+
+\subsection{PHP-variabler du kan använda}
+
+
+\subsection{Att använda PHP dynamiskt på servern}
+
+\end{document}
