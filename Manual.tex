@@ -68,7 +68,11 @@ Fördelarna med att använda mappar istället för HTML-sidor för att definiera
 \end{enumerate}
 
 \subsection{PHP-variabler du kan använda}
-
+\begin{description}
+	\item[{\tt \$title}] är webbsidans titel. Den kan med fördel användas även som rubrik, till exempel genom att skriva {\tt <h1><?php echo \$title; ?></h1>}
+	\item[{\tt \$Target}] är den mapp som webbsidan genereras till. Även om denna variabel inte förefaller så användbar, så är den tillgänglig för indexfilen. Troligen bör du använda {\tt \$URL} istället i de flesta fall. 
+	\item[{\tt \$URL}] är webbsidans URL-address. Denna är mycket användbar när du ska länka. Istället för att skriva {\tt <a href=''http://vansterliberalerna.se/sida/index.php''>...</a>}, så kan man skriva {\tt <a href=''<?php echo \$URL; ?>sida/index.php''>...</a>}. Det kanske inte ser ut som någon förenkling, men det för med sig en sak som är en enorm fördel: när webbsidan flyttas, uppdateras URL-er automatiskt. Alla som någon gång har flyttat en webbsida med vanliga hårdlänkar vet att det är ett helvete att byta ut dem manuellt. 
+\end{description}
 
 \subsection{Att använda PHP dynamiskt på servern}
 
