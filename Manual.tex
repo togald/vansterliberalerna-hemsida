@@ -48,7 +48,7 @@ Vänsterliberalernas hemsida har tre mappar, {\tt content/}, {\tt source/} och {
 \end{enumerate}
 
 \subsection{Struktur i {\tt content/}}
-För varje webbsida som ska skapas, måste en mapp med sidans namn skapas i {\tt content/}. I denna mapp skapas en fil {\tt intex.php}, som är den fil som används av {\tt source/creator.php} för att generera webbsidan. Indexfilen behöver inte innehålla någon struktur alls, förutom en deklaration av PHP-variabeln {\tt \$title} någonstans i dokumentet, förslagsvis i början. {\tt \$title} används för att skriva ut sidans titel i titelraden i webbläsaren. 
+För varje webbsida som ska skapas, måste en mapp med sidans namn skapas i {\tt content/}. I denna mapp skapas en fil {\tt index.php}, som är den fil som används av {\tt source/creator.php} för att generera webbsidan. Indexfilen behöver inte innehålla någon struktur alls, förutom en deklaration av PHP-variabeln {\tt \$title} någonstans i dokumentet, förslagsvis i början. {\tt \$title} används för att skriva ut sidans titel i titelraden i webbläsaren. 
 
 Fördelarna med att använda mappar istället för HTML-sidor för att definiera strukturen, är framför allt att
 
@@ -75,5 +75,16 @@ Fördelarna med att använda mappar istället för HTML-sidor för att definiera
 \end{description}
 
 \subsection{Att använda PHP dynamiskt på servern}
+\label{server-side-php}
+Som tidigare nämnts, är det fullt möjligt att använda PHP både för att kompilera webbsidan, och för att generera dynamiskt innehåll. Det lättaste är att helt enkelt använda olika öppningstaggar för PHP beroende på om det som ska genereras är dynamiskt innehåll eller statiskt innehåll. 
+
+Som standard, använder PHP {\tt <?php ... ?>} för att markera ett block med PHP-text. Men det finns två andra varianter: 
+
+\begin{description}
+	\item[{\tt <? ... ?>}] är kortformen av standardtaggen. 
+	\item[{\tt <\% ... \%>}] är den tagg som används av Microsoft ASP, och är tillgänglig även i PHP. 
+\end{description}
+
+PHP avråder från att man använder {\tt <? ... ?>}, eftersom det kan skapa problem med XML om man använder det. Vänsterliberalernas webbsida gör inte det, men vi föreslår ändå att {\tt <?php ... ?>} används för statiskt innehåll (developer-side), {\tt <\% ... \%>} för dynamiskt innehåll (server-side), och {\tt <? ... ?>} inte alls. 
 
 \end{document}
