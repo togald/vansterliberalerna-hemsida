@@ -34,6 +34,10 @@ p {
 	margin: 0 0 14pt;
 }
 
+#content p {
+    text-align: justify;
+}
+
 ul, ol, dl {
 	margin: 4pt 0 10pt;
 }
@@ -61,7 +65,7 @@ dd {
 	padding-left: 17pt;
 }
 
-.strong {
+#content p.strong {
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
