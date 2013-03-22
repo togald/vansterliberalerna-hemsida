@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test page</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            margin: auto;
+            max-width: 720pt;
+        }
+        #content {
+            width: 67%;
+            max-width: 480pt;
+            min-height: 300pt;
+            background-color: blue;
+            float: left;
+            padding: 12pt 0;
+        }
+        #sidebar {
+            width: 33%;
+            max-width: 240pt;
+            min-height: 300pt;
+            background-color: red;
+            float: left;
+            padding: 12pt 0;
+        }
+        header {
+            max-width: 720pt;
+            margin: auto;
+            height: 96px;
+            background-color: yellow;
+        }
+        footer {
+            max-width: 720pt;
+            margin: auto;
+            height: 30px;
+            background-color: green;
+            clear: both;
+        }
+        #content, #sidebar, footer {
+            color: white;
+        }
+        @media screen and ( max-width: 550px ) {
+            #content {
+                float: none;
+                width: 100%;
+            }
+            #sidebar {
+                float: none;
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="hwrapper">
+            <h1 style="margin:0;padding:7pt;text-align:center;">Test page</h1>
+        </div>
+        <nav>
+            
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div id="content">
+            <h1 style="padding:5pt;">Test page</h1>
+            <p style="text-align:justify;padding:0 5pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue felis, dapibus et laoreet non, aliquam nec lacus. In hendrerit ultrices tortor, in aliquet neque tincidunt in. Curabitur euismod dictum sapien ullamcorper faucibus. Sed augue lectus, imperdiet id iaculis id, porta ut quam. Donec luctus sodales tortor, eget accumsan nibh rhoncus ut. Aliquam erat volutpat. Aliquam non elit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            <p style="text-align:justify;padding:0 5pt;">Integer sit amet vestibulum dolor. Donec dapibus, felis vitae semper convallis, augue justo dictum justo, eget luctus nisl ligula ut metus. Integer facilisis, est quis porttitor pharetra, odio orci rutrum tellus, eget varius elit tortor feugiat nisl. Donec a diam leo, sed dapibus leo. Maecenas eu ipsum elit, nec dignissim turpis. Pellentesque ante magna, bibendum et vestibulum vel, laoreet non tortor. Donec fringilla elementum enim, a mattis lorem molestie ut. Nunc condimentum risus eu lorem faucibus faucibus. Ut id consectetur neque. Mauris a tellus turpis, non euismod lorem. Vestibulum fermentum auctor convallis.
+        </div>
+        <div id="sidebar">
+            <h2 style="text-align:center;">Sidebar</h2>
+            <p style="padding:5pt;">This is a sidebar, with a list.
+            <ul>
+                <li>List item one
+                <li>List item two
+                <li>Last list item
+            </ul>
+            <p style="padding:5pt;">More text in a paragraph
+        </div>
+    </div>
+    <footer>
+        <p style="text-align:center;">Maker: Togald Nilsson. Copyright is for the weak. 
+    </footer>
+</body>
+</html>
