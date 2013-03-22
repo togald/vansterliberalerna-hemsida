@@ -14,8 +14,8 @@
     $Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
     $Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/content/';
     $Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/target/';
-    //$URL = 'http://vansterliberalerna.comeze.com/';
-    $URL = $Target;
+    $URL = 'http://vansterliberalerna.comeze.com/';
+    //$URL = $Target;
     $Dirs = array();
     
     /*
