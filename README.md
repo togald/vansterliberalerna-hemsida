@@ -11,11 +11,10 @@ Vänsterliberalerna är ett politiskt parti stationerat i Uppsala, Sverige. Dett
 - target/ innehåller den färdiga webbsidan. Innehållet i denna mapp är det som synkroniseras till webbhotellet. 
 
 ###todo: 
-- Revidera och sedan godkänna stilmallen i partistyrelsen
-- Bestämma vad som ska finnas på sidan förutom info om politiken
 - Skapa sidor med faktiskt innehåll
 - Publicera!
 
 ###Layoutfunderingar: 
-- Sidebar? Medlemsinloggning, nyhetsflöde, kontaktinfo...?
+- Sidebar? Nyhetsflöde, partiet i sociala media, kontaktinfo...?
 - Ska sidebaren vara statisk, eller ändras beroende på vilken sida som besöks?
+- Ska själva menyraden följa med när man scrollar nedåt? Det är kanske inte så dumt. 
