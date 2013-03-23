@@ -126,6 +126,7 @@ nav {
 	font-size: 14px;
 }
 
+/* This code makes the navigation bar appear different depending on the screen size */
 @media screen and ( min-width: 651px ) {
 	#navbutton {
 		display: none;
@@ -269,6 +270,7 @@ nav {
     width: 220pt;
 }
 
+/* Code that makes the sidebar and content play well together */
 @media screen and ( max-width: 720pt ) and ( min-width: 550px ) {
     #content {
         width: 67%;
@@ -291,6 +293,7 @@ nav {
     }
 }
 
+/* Footer styling */
 footer {
 	border-top: 1px solid #777;
 	color: #777;
