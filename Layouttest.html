@@ -9,32 +9,30 @@
         }
         #wrapper {
             margin: auto;
-            max-width: 720pt;
+            max-width: 720px;
         }
         #content {
-            width: 67%;
-            max-width: 480pt;
-            min-height: 300pt;
+            max-width: 480px;
+            min-height: 300px;
             background-color: blue;
             float: left;
-            padding: 12pt 0;
+            padding: 12pt;
         }
         #sidebar {
-            width: 33%;
-            max-width: 240pt;
-            min-height: 300pt;
+            max-width: 240px;
+            min-height: 300px;
             background-color: red;
             float: left;
-            padding: 12pt 0;
+            padding: 12px 0;
         }
         header {
-            max-width: 720pt;
+            max-width: 720px;
             margin: auto;
             height: 96px;
             background-color: yellow;
         }
         footer {
-            max-width: 720pt;
+            max-width: 720px;
             margin: auto;
             height: 30px;
             background-color: green;
@@ -43,15 +41,24 @@
         #content, #sidebar, footer {
             color: white;
         }
+        @media screen and ( max-width: 720px ) and ( min-width: 551px ) {
+            #content {
+                width: 67%;
+            }
+            #sidebar {
+                width: 33%;
+            }
+        }
         @media screen and ( max-width: 550px ) {
             #content {
                 float: none;
                 width: 100%;
+                max-width: 550px;
             }
             #sidebar {
                 float: none;
                 width: 100%;
-                max-width: 600px;
+                max-width: 550px;
             }
         }
     </style>

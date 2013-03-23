@@ -6,7 +6,7 @@
     
     <meta name="author" content="Togald Nilsson">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="<?php echo $URL ?>style.css" type="text/css">
     <link rel="shortcut icon" href="<?php echo $URL ?>img/favicon.ico" type="image/gif">
@@ -94,8 +94,16 @@
             <img src="<?php echo $URL ?>img/icon.png" height="96" width="96" alt="Vänsterliberalernas logotyp">
         </object>
     </header>
-    <div id="content">
-        <?php echo $content ?>
+    <div id="wrapper">
+        <div id="content">
+            <?php echo $content ?>
+        </div>
+        <div id="sidebar">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue felis, dapibus et laoreet non, aliquam nec lacus. In hendrerit ultrices tortor, in aliquet neque tincidunt in. Curabitur euismod dictum sapien ullamcorper faucibus. Sed augue lectus, imperdiet id iaculis id, porta ut quam. Donec luctus sodales tortor, eget accumsan nibh rhoncus ut. Aliquam erat volutpat. Aliquam non elit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            <p>Integer sit amet vestibulum dolor. Donec dapibus, felis vitae semper convallis, augue justo dictum justo, eget luctus nisl ligula ut metus. Integer facilisis, est quis porttitor pharetra, odio orci rutrum tellus, eget varius elit tortor feugiat nisl. Donec a diam leo, sed dapibus leo. Maecenas eu ipsum elit, nec dignissim turpis. Pellentesque ante magna, bibendum et vestibulum vel, laoreet non tortor. Donec fringilla elementum enim, a mattis lorem molestie ut. Nunc condimentum risus eu lorem faucibus faucibus. Ut id consectetur neque. Mauris a tellus turpis, non euismod lorem. Vestibulum fermentum auctor convallis.
+        </div>
     </div>
     <footer>
         <p>Webbansvarig: Togald Nilsson, <a href="" id="authorEmail">Togald Nilsson</a><br>

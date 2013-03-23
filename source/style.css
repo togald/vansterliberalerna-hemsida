@@ -6,19 +6,19 @@ body {
 }
 
 h1 {
-	margin: 15pt 0 7pt;
+	margin: 15pt 5pt 7pt;
 	padding: 0;
 	text-align: center;
 	font-family: arial,helvetica;
 }
 
 h2 {
-	margin: 15pt 0 3pt;
+	margin: 15pt 5pt 3pt;
 	padding: 0;
 }
 
 h3 {
-	margin: 15pt 0 3pt;
+	margin: 15pt 5pt 3pt;
 	padding: 0;
 }
 
@@ -31,7 +31,7 @@ a:hover, a:active {
 }
 
 p {
-	margin: 0 0 14pt;
+	margin: 0 5pt 14pt;
 }
 
 #content p {
@@ -39,7 +39,7 @@ p {
 }
 
 ul, ol, dl {
-	margin: 4pt 0 10pt;
+	margin: 4pt 5pt 10pt;
 }
 
 ul {
@@ -73,8 +73,8 @@ dd {
 	max-width: 370pt;
 }
 
-header, #content, footer {
-	max-width: 600pt;
+header, #wrapper, footer {
+	max-width: 720pt;
 	margin: auto;
 }
 
@@ -259,7 +259,36 @@ nav {
 
 /* Special content styling */
 #content {
-	padding: 5pt;
+    float: left;
+    width: 480pt;
+}
+
+/* special sidebar styling */
+#sidebar {
+    float: left;
+    width: 220pt;
+}
+
+@media screen and ( max-width: 720pt ) and ( min-width: 550px ) {
+    #content {
+        width: 67%;
+    }
+    
+    #sidebar{
+        width: 33%;
+    }
+}
+
+@media screen and ( max-width: 550px ) {
+    #content {
+        float: none;
+        width: 100%;
+    }
+    
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
 }
 
 footer {
@@ -268,6 +297,7 @@ footer {
 	margin-top: 7pt;
 	padding: 4pt;
 	text-align: center;
+    clear: both;
 }
 
 footer p {
