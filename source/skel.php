@@ -120,7 +120,7 @@
                     $name = $members[3];
                     $quote = $cite[$name][0];
                     echo "<h2>$name</h2>\n";
-                    echo "<img src=\"\" height=96, width=96, style=\"float:left;margin-right:4pt;\" alt=\"Bild på $name\">\n";
+                    echo "<img src=\"".$URL."img/$name.jpg\" height=96, width=96, style=\"float:left;margin-right:4pt;\" alt=\"Bild på $name\">\n";
                     echo "<p style=\"font-style:italic;\">$quote";
                 ?>
             </section>
