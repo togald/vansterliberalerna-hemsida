@@ -99,7 +99,7 @@
             <?php echo $content ?>
         </div>
         <div id="sidebar">
-            <div class="box">
+            <div class="box important">
                 <h2>Sidebar</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue felis, dapibus et laoreet non, aliquam nec lacus. In hendrerit ultrices tortor, in aliquet neque tincidunt in. Curabitur euismod dictum sapien ullamcorper faucibus. Sed augue lectus, imperdiet id iaculis id, porta ut quam. 
                 <ul>
@@ -107,6 +107,16 @@
                     <li>Därför anser vi att potatis bör vara blå.
                     <li>Den mordiska moroten Leif kommer och tar dina barn när du sover. 
                 </ul>
+            </div>
+            <div class="box">
+                <h2>Vänsterliberalerna i sociala media</h2>
+                <p>Vi finns på: 
+                <object data="<?php echo $URL ?>img/facebook.svg" type="image/svg+xml" height="48" width="48">
+                    <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
+                </object>
+                <object data="<?php echo $URL ?>img/google+.svg" type="image/svg+xml" height="48" width="48">
+                    <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
+                </object>
             </div>
             <div class="box">
                 <h2>En box till</h2>

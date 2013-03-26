@@ -276,6 +276,7 @@ nav {
     border-radius: 5px;*/
     border-left: 1px solid silver;
     margin: 12pt 0 12pt 14pt;
+    clear: both;
 }
 
 #sidebar .box h2 {
@@ -322,6 +323,11 @@ nav {
         margin-left: 5pt;
         margin-right: 5pt;
         border: 0;
+        display: none;
+    }
+    
+    #sidebar .box.important {
+        display: block;
     }
     
     #sidebar .box p {
