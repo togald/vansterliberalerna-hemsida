@@ -74,6 +74,10 @@ dd {
 	max-width: 370pt;
 }
 
+img {
+    border: 0;
+}
+
 header, #wrapper, footer {
 	max-width: 720pt;
 	margin: auto;
@@ -266,12 +270,12 @@ nav {
 }
 
 /* special sidebar styling */
-#sidebar {
+aside {
     float: left;
     width: 220pt;
 }
 
-#sidebar .box {
+aside section {
     /*border: 1px solid gray;
     border-radius: 5px;*/
     border-left: 1px solid silver;
@@ -279,7 +283,7 @@ nav {
     clear: both;
 }
 
-#sidebar .box h2 {
+aside section h2 {
     font-size: 120%;
     margin: 0 0 3pt;
     padding: 5pt 0 3pt;
@@ -288,49 +292,49 @@ nav {
     background-color: #d55;
 }
 
-#sidebar .box p {
+aside section p {
     text-align: justify;
     margin-left: 10pt;
 }
 
 /* Code that makes the sidebar and content play well together */
-@media screen and ( max-width: 720pt ) and ( min-width: 550px ) {
+@media screen and ( max-width: 720pt ) and ( min-width: 650px ) {
     #content {
         width: 67%;
     }
     
-    #sidebar{
+    aside{
         width: 33%;
     }
     
-    #sidebar .box {
+    aside section {
         margin-right: 5pt;
     }
 }
 
-@media screen and ( max-width: 550px ) {
+@media screen and ( max-width: 650px ) {
     #content {
         float: none;
         width: 100%;
     }
     
-    #sidebar {
+    aside {
         float: none;
         width: 100%;
     }
     
-    #sidebar .box {
+    aside section {
         margin-left: 5pt;
         margin-right: 5pt;
         border: 0;
         display: none;
     }
     
-    #sidebar .box.important {
+    aside section.important {
         display: block;
     }
     
-    #sidebar .box p {
+    aside section p {
         margin-left: inherit;
     }
 }

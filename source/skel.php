@@ -98,31 +98,50 @@
         <div id="content">
             <?php echo $content ?>
         </div>
-        <div id="sidebar">
-            <div class="box important">
-                <h2>Sidebar</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue felis, dapibus et laoreet non, aliquam nec lacus. In hendrerit ultrices tortor, in aliquet neque tincidunt in. Curabitur euismod dictum sapien ullamcorper faucibus. Sed augue lectus, imperdiet id iaculis id, porta ut quam. 
-                <ul>
-                    <li>Detta är en lista. Vänsterliberalerna vill...
-                    <li>Därför anser vi att potatis bör vara blå.
-                    <li>Den mordiska moroten Leif kommer och tar dina barn när du sover. 
-                </ul>
-            </div>
-            <div class="box">
+        <aside>
+            <section>
+                <?php
+                    $togald = array( ""
+                                   , ""
+                                   );
+                    $alex   = array( ""
+                                   , ""
+                                   );
+                    $bard   = array( ""
+                                   , ""
+                                   );
+                    $styr   = array( "Citat av någon medlem i partistyrelsen, gärna lite radikalt och tabu. Till exempel \"jag gillar porr, det är bra att det finns så mycket av det\", som Bard skulle kunna ha sagt. Citatet ska vara ungefär så här långt. " );
+                    $cite = array( "Togald Nilsson"    => $togald
+                                 , "Bard Nilsson"      => $bard
+                                 , "Alexander Van Dam" => $alex
+                                 , "Styrelsemedlem"    => $styr
+                                 );
+                    $members = array("Togald Nilsson", "Bard Nilsson", "Alexander Van Dam", "Styrelsemedlem");
+                    $name = $members[3];
+                    $quote = $cite[$name][0];
+                    echo "<h2>$name</h2>\n";
+                    echo "<img src=\"\" height=96, width=96, style=\"float:left;margin-right:4pt;\" alt=\"Bild på $name\">\n";
+                    echo "<p style=\"font-style:italic;\">$quote";
+                ?>
+            </section>
+            <section class="important">
                 <h2>Vänsterliberalerna i sociala media</h2>
-                <p>Vi finns på: 
                 <object data="<?php echo $URL ?>img/facebook.svg" type="image/svg+xml" height="48" width="48">
-                    <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
+                    <a href="http://www.facebook.com/">
+                        <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
+                    </a>
                 </object>
                 <object data="<?php echo $URL ?>img/google+.svg" type="image/svg+xml" height="48" width="48">
-                    <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
+                    <a href="http://plus.google.com/">
+                        <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
+                    </a>
                 </object>
-            </div>
-            <div class="box">
+            </section>
+            <section>
                 <h2>En box till</h2>
                 <p>Innehållet i boxen kan variera. Här är det bara ett litet stycke text. 
-            </div>
-        </div>
+            </section>
+        </aside>
     </div>
     <footer>
         <p>Webbansvarig: Togald Nilsson, <a href="" id="authorEmail">Togald Nilsson</a><br>
