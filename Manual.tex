@@ -87,6 +87,15 @@ Som standard använder PHP {\tt <?php ... ?>} för att markera ett block med PHP
 
 PHP avråder från att man använder {\tt <? ... ?>}, eftersom det kan skapa problem med XML om man använder det. Vänsterliberalernas webbsida gör inte det, men vi föreslår ändå att {\tt <?php ... ?>} används för statiskt innehåll (developer-side), {\tt <\% ... \%>} för dynamiskt innehåll (server-side), och {\tt <? ... ?>} inte alls. 
 
+\subsection{Bilder}
+Vänsterliberalerna har två sätt att inkludera bilder på webbsidan. Delade bilder, bilder som ska finnas tillgängliga från alla sidor på hela hemsidan, ska läggas direkt i {\tt source/img/}. Denna mapp ska inte innehålla fler bilder än att de kan lagras i en enda mapp utan att det blir plottrigt. Exempel på bilder som ligger här är ikoner för sociala media, partiets logga, thumbnails av partistyrelsens medlemmar. 
+
+Bilder som inte ska delas mellan flera sidor, ska lagras i samma mapp som indexdokumentet för sidan de ska användas på. Till exempel pressbilder lagras direkt i {\tt content/press/}, fullstora bilder på styrelsemedlemmar lagras i medlemmens mapp i {\tt content/styrelsen/}. 
+
+Alla thumbnails skall vara kvadratiska, 96x96 pixlar. Fullstora bilder ska ha filnamnstillägget skrivet med tre bokstäver, {\tt .jpg}, {\tt .png}, {\tt .gif} och {\tt .svg} rekommenderas. Thumbnails ska ha suffixet {\tt .thumb}. 
+
+De fullstora bilderna på styrelsemedlemmar ska ha bredden 200 pixlar, och får vara av valfri höjd. Det rekommenderas att bilden är i porträttläge, det vill säga högre än den är bred, men det är inte ett krav. 
+
 \section{Tips}
 Varje gång webbidan kompileras, skrivs hela {\tt target/} över med nya filer, oavsett om något ändrats eller inte. Om du har en SSD i datorn, är det inte optimalt. Då kan det vara bra att skapa ett litet utrymme på systemminnet, som du kan använda att jobba på. Sök på ''create a ramdisk'' på internet så hittar du garanterat något användbart. 
 

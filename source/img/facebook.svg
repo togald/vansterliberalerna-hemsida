@@ -6,6 +6,7 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    version="1.1"
    width="256"
@@ -19,10 +20,7 @@
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>facebook web</dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs36" />
 
-<path
-   d="M 209.018,10.505 H 44.983 c -19.599,0 -35.487,15.888 -35.487,35.487 v 164.015 c 0,19.599 15.888,35.486 35.487,35.486 h 164.033 c 19.604,0 35.487,-15.888 37.487,-34.819 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 z"
-   id="rect1942_1_"
-   style="fill:#0037c1" />
+
 <linearGradient
    x1="93.999496"
    y1="1181.167"
@@ -40,13 +38,22 @@
    style="stop-color:#ffffff;stop-opacity:0"
    offset="0.66000003" />
 </linearGradient>
-<path
-   d="M 209.018,10.505 H 44.983 c -19.599,0 -35.487,15.889 -35.487,35.487 v 69.409 c 36.33,14.751 76.046,22.896 117.671,22.896 42.263,0 82.558,-8.395 119.336,-23.576 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 z"
-   id="path10"
-   style="fill:url(#SVGID_1_)" />
-<g
-   transform="translate(-373.642,-318.344)"
-   id="layer1">
+
+
+
+
+<a
+   xlink:href="http://www.facebook.com/togald/"
+   target="_top"><g
+     id="g4207"><path
+       d="M 209.018,10.505 H 44.983 c -19.599,0 -35.487,15.888 -35.487,35.487 v 164.015 c 0,19.599 15.888,35.486 35.487,35.486 h 164.033 c 19.604,0 35.487,-15.888 37.487,-34.819 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 z"
+       id="rect1942_1_"
+       style="fill:#0037c1" /><path
+       d="M 209.018,10.505 H 44.983 c -19.599,0 -35.487,15.889 -35.487,35.487 v 69.409 c 36.33,14.751 76.046,22.896 117.671,22.896 42.263,0 82.558,-8.395 119.336,-23.576 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 z"
+       id="path10"
+       style="fill:url(#SVGID_1_)" /><g
+       transform="translate(-373.642,-318.344)"
+       id="layer1">
 	<g
    transform="matrix(1.7982054,0,0,1.8129643,376.63343,326.35613)"
    id="Layer_3">
@@ -55,9 +62,8 @@
    id="path3336"
    style="fill:#ffffff" />
 	</g>
-</g>
-<g
-   id="g15">
+</g><g
+       id="g15">
 	
 		<linearGradient
    x1="93.999496"
@@ -80,13 +86,11 @@
    d="m 9.496,115.401 v 94.605 c 0,19.6 15.888,35.486 35.487,35.486 h 164.033 c 19.604,0 35.488,-15.889 37.488,-34.819 V 114.721 C 209.725,129.902 169.43,138.297 127.167,138.297 85.542,138.298 45.825,130.152 9.496,115.401 z"
    id="path22"
    style="fill:url(#SVGID_2_)" />
-</g>
-<path
-   d="M 246.503,114.721 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 H 44.982 c -19.599,0 -35.486,15.889 -35.486,35.487 v 69.409"
-   id="path24"
-   style="fill:none;stroke:#0037c1;stroke-width:2;stroke-miterlimit:10" />
-<g
-   id="g26">
+</g><path
+       d="M 246.503,114.721 V 46.66 C 244.504,26.394 228.615,10.505 209.018,10.505 H 44.982 c -19.599,0 -35.486,15.889 -35.486,35.487 v 69.409"
+       id="path24"
+       style="fill:none;stroke:#0037c1;stroke-width:2;stroke-miterlimit:10" /><g
+       id="g26">
 	<g
    id="g28">
 		<g
@@ -97,5 +101,5 @@
    style="fill:none;stroke:#002c99;stroke-width:2;stroke-miterlimit:10" />
 		</g>
 	</g>
-</g>
+</g></g></a>
 </svg>

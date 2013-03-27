@@ -101,26 +101,33 @@
         <aside>
             <section>
                 <?php
-                    $togald = array( ""
-                                   , ""
-                                   );
-                    $alex   = array( ""
-                                   , ""
-                                   );
-                    $bard   = array( ""
-                                   , ""
-                                   );
-                    $styr   = array( "Citat av någon medlem i partistyrelsen, gärna lite radikalt och tabu. Till exempel \"jag gillar porr, det är bra att det finns så mycket av det\", som Bard skulle kunna ha sagt. Citatet ska vara ungefär så här långt. " );
-                    $cite = array( "Togald Nilsson"    => $togald
-                                 , "Bard Nilsson"      => $bard
-                                 , "Alexander Van Dam" => $alex
-                                 , "Styrelsemedlem"    => $styr
-                                 );
-                    $members = array("Togald Nilsson", "Bard Nilsson", "Alexander Van Dam", "Styrelsemedlem");
-                    $name = $members[3];
-                    $quote = $cite[$name][0];
+                    $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
+                                    , ""
+                                    );
+                    $alex    = array( ""
+                                    , ""
+                                    );
+                    $bard    = array( ""
+                                    , ""
+                                    );
+                    $styr    = array( "Citat av någon medlem i partistyrelsen, gärna lite radikalt och tabu. Till exempel \"jag gillar porr, det är bra att det finns så mycket av det\", som Bard skulle kunna ha sagt. Citatet ska vara ungefär så här långt, cirka 40 ord. " );
+                    $cite    = array( "Togald Nilsson"    => $togald
+                                    , "Bard Nilsson"      => $bard
+                                    , "Alexander Van Dam" => $alex
+                                    , "Styrelsemedlem"    => $styr
+                                    );
+                    $members = array( "Togald Nilsson"
+                                    , "Bard Nilsson"
+                                    , "Alexander Van Dam"
+                                    , "Styrelsemedlem"
+                                    );
+                    # All of the above are arrays necessary to display the 
+                    # citations correctly. We need stuff people have said for 
+                    # this to work, though. 
+                    $name = $members[rand(0,count($members)-1)];
+                    $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
-                    echo "<img src=\"".$URL."img/$name.jpg\" height=96, width=96, style=\"float:left;margin-right:4pt;\" alt=\"Bild på $name\">\n";
+                    echo "<img src=\"".$URL."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
                     echo "<p style=\"font-style:italic;\">$quote";
                 ?>
             </section>
