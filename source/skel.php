@@ -134,12 +134,12 @@
             <section class="important">
                 <h2>Vänsterliberalerna i sociala media</h2>
                 <object data="<?php echo $URL ?>img/facebook.svg" type="image/svg+xml" height="48" width="48">
-                    <a href="http://www.facebook.com/">
+                    <a href="http://www.facebook.com/togald/">
                         <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
                     </a>
                 </object>
                 <object data="<?php echo $URL ?>img/google+.svg" type="image/svg+xml" height="48" width="48">
-                    <a href="http://plus.google.com/">
+                    <a href="https://plus.google.com/u/0/b/114415882304437608773/114415882304437608773/posts">
                         <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
                     </a>
                 </object>
