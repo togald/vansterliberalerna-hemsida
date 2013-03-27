@@ -13,8 +13,3 @@ Vänsterliberalerna är ett politiskt parti stationerat i Uppsala, Sverige. Dett
 ###todo: 
 - Skapa sidor med faktiskt innehåll
 - Publicera!
-
-###Layoutfunderingar: 
-- Sidebar? Nyhetsflöde, partiet i sociala media, kontaktinfo...?
-- Ska sidebaren vara statisk, eller ändras beroende på vilken sida som besöks?
-- Ska själva menyraden följa med när man scrollar nedåt? Det är kanske inte så dumt. 
