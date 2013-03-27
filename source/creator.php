@@ -11,11 +11,12 @@
         The $URL variable is defined twice. Once for the local path, and once for the remote path, i.e. the URL to the webpage. Be sure to comment out the one you're not using at the moment! 
     */
     
-    $Source = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/source/';
-    $Content = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/content/';
-    $Target = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/target/';
-    $URL = 'http://mfserver.comze.com/';
-    //$URL = $Target;
+    $Root = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/';
+    $Source = $Root.'source/';
+    $Content = $Root.'content/';
+    $Target = $Root.'target/';
+    //$URL = 'http://www.mfserver.net/';
+    $URL = $Target;
     $Dirs = array();
     
     /*

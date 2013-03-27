@@ -36,6 +36,19 @@
     <![endif]-->
 </head>
 <body onload="printMail()">
+    
+    <!-- Facebook Social plugin JavaScript SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_PI/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Facebook code ends here -->
+    
     <div id="bgcolor"></div>
     <header>
         <div id="hgroup">
@@ -119,8 +132,7 @@
                                     , "Alexander Van Dam"
                                     );
                     # All of the above are arrays necessary to display the 
-                    # citations correctly. We need stuff people have said for 
-                    # this to work, though. 
+                    # citations correctly. 
                     $name = $members[rand(0,count($members)-1)];
                     $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
@@ -131,7 +143,7 @@
             <section class="important">
                 <h2>Vänsterliberalerna i sociala media</h2>
                 <object data="<?php echo $URL ?>img/facebook.svg" type="image/svg+xml" height="48" width="48">
-                    <a href="http://www.facebook.com/togald/">
+                    <a href="http://www.facebook.com/Vansterliberalerna/">
                         <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
                     </a>
                 </object>
@@ -142,8 +154,8 @@
                 </object>
             </section>
             <section>
-                <h2>En box till</h2>
-                <p>Innehållet i boxen kan variera. Här är det bara ett litet stycke text. 
+                <h2>Facebook</h2>
+                <div class="fb-like-box" data-href="http://www.facebook.com/Vansterliberalerna" data-width="220" data-show-faces="true" data-stream="false" data-header="false"></div>
             </section>
         </aside>
     </div>

@@ -63,7 +63,7 @@ Fördelarna med att använda mappar istället för HTML-sidor för att definiera
 	\item Redigera eller skapa de sidor du vill ha i {\tt content/}. Glöm inte att använda korrekt HTML5 och att deklarera PHP-variabeln {\tt \$title}. 
 	\item Öppna {\tt source/skel.php}, och leta dig fram till sektionen som definierar sidmenyn. Om du har skapat eller redigerat sidor som du vill ska synas i menyn, måste du uppdatera den manuellt. 
 	\item Öppna en terminal, och navigera till mappen dit du klonade hemsidan. 
-	\item Öppna {\tt source/creator.php} och kontrollera att variablerna {\tt \$Target} och {\tt \$URL} har värden som är rätt för ditt system. 
+	\item Öppna {\tt source/creator.php} och kontrollera att {\tt \$Root} är satt att peka till den mapp där du klonade webbsidan. Kontrollera även att du har kommenterat ut rätt deklaration av {\tt \$URL}. 
 	\item Kör {\tt php source/creator.php} i terminalen. Du borde få en utskrift av alla filer som den har behandlat och kopierat. 
 \end{enumerate}
 
