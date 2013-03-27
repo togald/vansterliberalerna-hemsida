@@ -102,24 +102,21 @@
             <section>
                 <?php
                     $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
-                                    , ""
+                                    , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
                                     );
-                    $alex    = array( ""
-                                    , ""
+                    $alex    = array( "Så ligger man nermysad i sängen bredvid flickan sin, med en katt i fotänden och den andra på bröstet. Det enda som hörs är en vinande vind och ett milt spinnande. Det är såhär det ska vara ^^"
+                                    , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
                                     );
-                    $bard    = array( ""
-                                    , ""
+                    $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa... vet detta och handla efter eget förstånd. "
+                                    , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa läskig stämning. "
                                     );
-                    $styr    = array( "Citat av någon medlem i partistyrelsen, gärna lite radikalt och tabu. Till exempel \"jag gillar porr, det är bra att det finns så mycket av det\", som Bard skulle kunna ha sagt. Citatet ska vara ungefär så här långt, cirka 40 ord. " );
                     $cite    = array( "Togald Nilsson"    => $togald
                                     , "Bard Nilsson"      => $bard
                                     , "Alexander Van Dam" => $alex
-                                    , "Styrelsemedlem"    => $styr
                                     );
                     $members = array( "Togald Nilsson"
                                     , "Bard Nilsson"
                                     , "Alexander Van Dam"
-                                    , "Styrelsemedlem"
                                     );
                     # All of the above are arrays necessary to display the 
                     # citations correctly. We need stuff people have said for 
