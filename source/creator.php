@@ -15,8 +15,8 @@
     $Source = $Root.'source/';
     $Content = $Root.'content/';
     $Target = $Root.'target/';
-    //$URL = 'http://www.mfserver.net/';
-    $URL = $Target;
+    $URL = 'http://www.mfserver.net/';
+    //$URL = $Target;
     $Dirs = array();
     
     /*

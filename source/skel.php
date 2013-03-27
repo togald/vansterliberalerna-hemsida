@@ -113,15 +113,8 @@
                 echo $content;
             ?>
             <section id="likebar">
-                <button>
-                    Like this
-                </button>
-                <button>
-                    +1 this
-                </button>
-                <button>
-                    Flattr this
-                </button>
+                <div class="fb-like" data-href="https://www.facebook.com/Vansterliberalerna" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                <div class="g-plusone" data-size="medium" data-href="https://plus.google.com/b/114415882304437608773/114415882304437608773/posts" style="padding-top: 12px;"></div>
             </section>
         </div>
         <aside>
@@ -134,7 +127,7 @@
                                     , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
                                     );
                     $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa... vet detta och handla efter eget förstånd. "
-                                    , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa läskig stämning. "
+                                    , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
                                     );
                     $cite    = array( "Togald Nilsson"    => $togald
                                     , "Bard Nilsson"      => $bard
@@ -165,9 +158,6 @@
                         <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
                     </a>
                 </object>
-                <button>
-                    Flattr
-                </button>
             </section>
             <section>
                 <h2>Facebook</h2>
@@ -179,5 +169,16 @@
         <p>Webbansvarig: Togald Nilsson, <a href="" id="authorEmail">Togald Nilsson</a><br>
         Källkoden till sidan distribueras under <a href="http://sam.zoy.org/wtfpl/">WTFPL-licensen</a>, och finns på <a href="https://github.com/MFserver/vansterliberalerna-hemsida">GitHub</a> för nedladdning. Copyright är för mesar. </p>
     </footer>
+    
+    <!-- Script for the Google +1 button -->
+    <script type="text/javascript">
+  window.___gcfg = {lang: 'sv'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 </html>
