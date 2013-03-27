@@ -109,7 +109,20 @@
     </header>
     <div id="wrapper">
         <div id="content">
-            <?php echo $content ?>
+            <?php 
+                echo $content;
+            ?>
+            <section id="likebar">
+                <button>
+                    Like this
+                </button>
+                <button>
+                    +1 this
+                </button>
+                <button>
+                    Flattr this
+                </button>
+            </section>
         </div>
         <aside>
             <section>
@@ -141,7 +154,7 @@
                 ?>
             </section>
             <section class="important">
-                <h2>Vänsterliberalerna i sociala media</h2>
+                <h2>Vänsterliberalerna på nätet</h2>
                 <object data="<?php echo $URL ?>img/facebook.svg" type="image/svg+xml" height="48" width="48">
                     <a href="http://www.facebook.com/Vansterliberalerna/">
                         <img src="<?php echo $URL ?>img/facebook.png" height="48" width="48" alt="facebook">
@@ -152,6 +165,9 @@
                         <img src="<?php echo $URL ?>img/google+.png" height="48" width="48" alt="Google+">
                     </a>
                 </object>
+                <button>
+                    Flattr
+                </button>
             </section>
             <section>
                 <h2>Facebook</h2>

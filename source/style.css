@@ -269,6 +269,11 @@ nav {
     width: 480pt;
 }
 
+#likebar {
+    text-align: center;
+    margin: 0 auto 10pt;
+}
+
 /* special sidebar styling */
 aside {
     float: left;
@@ -332,6 +337,7 @@ aside section p {
     
     aside section.important {
         display: block;
+        text-align: center;
     }
     
     aside section p {
