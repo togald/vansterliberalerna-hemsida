@@ -14,9 +14,9 @@
     $Root = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/';
     $Source = $Root.'source/';
     $Content = $Root.'content/';
-    $Target = $Root.'target/';
-    $URL = 'http://www.mfserver.net/';
-    //$URL = $Target;
+    $Target = '/srv/http/';
+    //$URL = 'http://www.mfserver.net/';
+    $URL = 'http://localhost/';
     $Dirs = array();
     
     /*
