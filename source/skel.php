@@ -1,3 +1,8 @@
+<?
+    # PHP short tags are used to make dynamic content. This section makes dev-side variables avaliable to the server-side. 
+    $Root = "<?php echo $URL ?>"; # Developer variable $URL is avaliable as server variable $Root
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +57,7 @@
     <div id="bgcolor"></div>
     <header>
         <div id="hgroup">
-            <h1><a href="<?php echo $URL ?>index.html" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
+            <h1><a href="<?php echo $URL ?>index.php" title="Klicka för att återvända till startsidan">Vänsterliberalerna</a></h1>
             <h2>Nya tider ger ny politik</h2>
             <span id="navbutton" onclick="toggle('nav')"> ≡ </span>
             <nav id="nav">
@@ -73,33 +78,33 @@
                     <li><a href="">Nästa element</a>
                 */ ?>
                 <ul>
-                    <li><a href="<?php echo $URL ?>index.html">Hem</a>
-                    <li><a href="<?php echo $URL ?>politik/index.html">Politik</a>
+                    <li><a href="<?php echo $URL ?>index.php">Hem</a>
+                    <li><a href="<?php echo $URL ?>politik/index.php">Politik</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>politik/bistand/index.html">Bistånd</a>
-                            <li><a href="<?php echo $URL ?>politik/forsvar/index.html">Försvar</a>
-                            <li><a href="<?php echo $URL ?>politik/immaterialratt/index.html">Immaterialrätt</a>
-                            <li><a href="<?php echo $URL ?>politik/invandring/index.html">Invandring</a>
-                            <li><a href="<?php echo $URL ?>politik/miljo/index.html">Miljö</a>
-                            <li><a href="<?php echo $URL ?>politik/rattsvasende/index.html">Rättsväsende</a>
-                            <li><a href="<?php echo $URL ?>politik/skatter/index.html">Skatter och bidrag</a>
-                            <li><a href="<?php echo $URL ?>politik/utbildning/index.html">Utbildning</a>
-                            <li><a href="<?php echo $URL ?>politik/vard/index.html">Vård och omsorg</a>
+                            <li><a href="<?php echo $URL ?>politik/bistand/index.php">Bistånd</a>
+                            <li><a href="<?php echo $URL ?>politik/forsvar/index.php">Försvar</a>
+                            <li><a href="<?php echo $URL ?>politik/immaterialratt/index.php">Immaterialrätt</a>
+                            <li><a href="<?php echo $URL ?>politik/invandring/index.php">Invandring</a>
+                            <li><a href="<?php echo $URL ?>politik/miljo/index.php">Miljö</a>
+                            <li><a href="<?php echo $URL ?>politik/rattsvasende/index.php">Rättsväsende</a>
+                            <li><a href="<?php echo $URL ?>politik/skatter/index.php">Skatter och bidrag</a>
+                            <li><a href="<?php echo $URL ?>politik/utbildning/index.php">Utbildning</a>
+                            <li><a href="<?php echo $URL ?>politik/vard/index.php">Vård och omsorg</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>vardegrund/index.html">Värdegrund</a>
-                    <li><a href="<?php echo $URL ?>styrelsen/index.html">Styrelsen</a>
+                    <li><a href="<?php echo $URL ?>vardegrund/index.php">Värdegrund</a>
+                    <li><a href="<?php echo $URL ?>styrelsen/index.php">Styrelsen</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>styrelsen/bard/index.html">Bard Nilsson (ordförande)</a>
-                            <li><a href="<?php echo $URL ?>styrelsen/togald/index.html">Togald Nilsson (sekreterare)</a>
-                            <li><a href="<?php echo $URL ?>styrelsen/alexander/index.html">Alexander Van Dam (kassör)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/bard/index.php">Bard Nilsson (ordförande)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/togald/index.php">Togald Nilsson (sekreterare)</a>
+                            <li><a href="<?php echo $URL ?>styrelsen/alexander/index.php">Alexander Van Dam (kassör)</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>om/index.html">Om partiet</a>
+                    <li><a href="<?php echo $URL ?>om/index.php">Om partiet</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>om/stadgar/index.html">Stadgar</a>
+                            <li><a href="<?php echo $URL ?>om/stadgar/index.php">Stadgar</a>
                             <li><a href="<?php echo $URL ?>om/stadgar/stadgar.pdf">Ladda ner stadgar (PDF)</a>
-                            <li><a href="<?php echo $URL ?>om/protokoll/index.html">Mötesprotokoll</a>
+                            <li><a href="<?php echo $URL ?>om/protokoll/index.php">Mötesprotokoll</a>
                         </ul>
-                    <li><a href="<?php echo $URL ?>press/index.html">Press</a>
+                    <li><a href="<?php echo $URL ?>press/index.php">Press</a>
                 </ul>
             </nav>
         </div>
@@ -119,7 +124,7 @@
         </div>
         <aside>
             <section>
-                <?php
+                <?
                     $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
                                     , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
                                     );
@@ -142,7 +147,7 @@
                     $name = $members[rand(0,count($members)-1)];
                     $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
-                    echo "<img src=\"".$URL."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
+                    echo "<img src=\"".$Root."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
                     echo "<p style=\"font-style:italic;\">$quote";
                 ?>
             </section>

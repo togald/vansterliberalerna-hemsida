@@ -15,8 +15,8 @@
     $Source = $Root.'source/';
     $Content = $Root.'content/';
     $Target = '/srv/http/';
-    //$URL = 'http://www.mfserver.net/';
-    $URL = 'http://localhost/';
+    $URL = 'http://mfserver.net/';
+    //$URL = 'http://localhost/';
     $Dirs = array();
     
     /*
@@ -70,10 +70,10 @@
             }
             
             // Write the output to a file
-            $file = fopen($Target.$page.'index.html','w');
+            $file = fopen($Target.$page.'index.php','w');
             fwrite($file, $output);
             fclose($file);
-            $status = "Created ".$page."index.html";
+            $status = "Created ".$page."index.php";
         } else {
             $status = "ERROR: No template avaliable for $page";
         }
