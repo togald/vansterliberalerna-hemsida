@@ -31,20 +31,19 @@ Vänsterliberalernas hemsida är inte som vilken hemsida som helst. Hemsidan ska
 Eftersom webbsidan i dagsläget bara använder PHP på utvecklarsidan, behövs ingen server med PHP installerat för att köra webbsidan. Däremot måste utvecklaren ha PHP installerat på sin dator. Det är möjligt att använda PHP för att generera dynamiskt innehåll på webbsidan också, mer om det i sektion \ref{server-side-php}.
 
 \section{Hur fungerar det?}
-Vänsterliberalernas hemsida har tre mappar, {\tt content/}, {\tt source/} och {\tt target/}. 
+Vänsterliberalernas hemsida har två mappar, {\tt content/} och {\tt source/}. 
 
 \begin{itemize}
 	\item {\tt content/} innehåller mallar till alla de sidor som ska genereras. 
 	\item {\tt source/} innehåller alla källfiler, {\tt creator.php}, {\tt skel.php} och bilder, style sheets och så vidare som ska finnas på sidan. 
-	\item {\tt target/} är vanligtvis tom vid start. Det är i denna mapp som webbsidan genereras. 
 \end{itemize}
 
 {\tt source/creator.php} är den fil där all magi sker. Det är den som används för att kompilera mallarna till en fungerande webbsida. Filen är väl kommenterad, och dess arbetsordning beskrivs här. 
 
 \begin{enumerate}
 	\item Leta igenom {\tt content/} efter mallar, och kompilera en webbsida för varje mall som hittas med {\tt source/skel.php} som skelett. 
-	\item Placera mallfilen på motsvarande plats i {\tt target/}. Alla filer som inte är indexfiler kopieras utan behandling. 
-	\item Kopiera över bilder, style sheets och andra statiska dokument från {\tt source/} till {\tt target/}.
+	\item Placera mallfilen på motsvarande plats i {\tt \$Target}. Alla filer som inte är indexfiler kopieras utan behandling. 
+	\item Kopiera över bilder, style sheets och andra statiska dokument från {\tt source/} till {\tt \$Target}.
 \end{enumerate}
 
 \subsection{Struktur i {\tt content/}}
@@ -63,7 +62,7 @@ Fördelarna med att använda mappar istället för HTML-sidor för att definiera
 	\item Redigera eller skapa de sidor du vill ha i {\tt content/}. Glöm inte att använda korrekt HTML5 och att deklarera PHP-variabeln {\tt \$title}. 
 	\item Öppna {\tt source/skel.php}, och leta dig fram till sektionen som definierar sidmenyn. Om du har skapat eller redigerat sidor som du vill ska synas i menyn, måste du uppdatera den manuellt. 
 	\item Öppna en terminal, och navigera till mappen dit du klonade hemsidan. 
-	\item Öppna {\tt source/creator.php} och kontrollera att {\tt \$Root} är satt att peka till den mapp där du klonade webbsidan. Kontrollera även att du har kommenterat ut rätt deklaration av {\tt \$URL}. 
+	\item Öppna {\tt source/creator.php} och kontrollera att {\tt \$Root} är satt att peka till den mapp där du klonade webbsidan. Kontrollera även att du har kommenterat ut rätt deklaration av {\tt \$URL}, och att {\tt \$Target} pekar på rätt mapp.  
 	\item Kör {\tt php source/creator.php} i terminalen. Du borde få en utskrift av alla filer som den har behandlat och kopierat. 
 \end{enumerate}
 
@@ -97,7 +96,7 @@ Alla thumbnails skall vara kvadratiska, 96x96 pixlar. Fullstora bilder ska ha fi
 De fullstora bilderna på styrelsemedlemmar ska ha bredden 200 pixlar, och får vara av valfri höjd. Det rekommenderas att bilden är i porträttläge, det vill säga högre än den är bred, men det är inte ett krav. 
 
 \section{Tips}
-Varje gång webbidan kompileras, skrivs hela {\tt target/} över med nya filer, oavsett om något ändrats eller inte. Om du har en SSD i datorn, är det inte optimalt. Då kan det vara bra att skapa ett litet utrymme på systemminnet, som du kan använda att jobba på. Sök på ''create a ramdisk'' på internet så hittar du garanterat något användbart. 
+Varje gång webbidan kompileras, skrivs hela {\tt \$Target} över med nya filer, oavsett om något ändrats eller inte. Om du har en SSD i datorn, är det inte optimalt. Då kan det vara bra att skapa ett litet utrymme på systemminnet, som du kan använda att jobba på. Sök på ''create a ramdisk'' på internet så hittar du garanterat något användbart. 
 
 Du kan naturligtvis skapa ett PHP-skript för att köra {\tt source/creator.php} direkt på webbhotellet om du inte har möjlighet att installera PHP på din egen dator. Men då är det ganska svårt att generera dynamiskt innehåll på samma webbhotell. Totalt är det förmodligen lättare för dig att installera PHP på din egen dator. 
 
