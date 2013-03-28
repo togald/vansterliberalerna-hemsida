@@ -15,8 +15,8 @@
     $Source = $Root.'source/';
     $Content = $Root.'content/';
     $Target = '/srv/http/';
-    //$URL = 'http://mfserver.net/';
-    $URL = 'http://localhost/';
+    $URL = 'http://mfserver.net/';
+    //$URL = 'http://localhost/';
     $Dirs = array();
     
     /*

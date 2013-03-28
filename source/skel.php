@@ -127,11 +127,12 @@
                 <?
                     $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
                                     , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
+                                    , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
                                     );
-                    $alex    = array( "Så ligger man nermysad i sängen bredvid flickan sin, med en katt i fotänden och den andra på bröstet. Det enda som hörs är en vinande vind och ett milt spinnande. Det är såhär det ska vara ^^"
+                    $alex    = array( "den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
                                     , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
                                     );
-                    $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa... vet detta och handla efter eget förstånd. "
+                    $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
                                     , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
                                     );
                     $cite    = array( "Togald Nilsson"    => $togald
