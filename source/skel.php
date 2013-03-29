@@ -125,6 +125,7 @@
                                 );
                 $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
                                 , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
+                                , "Kommer jag där som 80-åring och bara \"Jag har skitit i urnan\". \"Du kan knappt skita själv\", säger myndigheterna, \"Ja, men mitt barnbarn hjälpte mig.\""
                                 );
                 $cite    = array( "Togald Nilsson"    => $togald
                                 , "Bard Nilsson"      => $bard
