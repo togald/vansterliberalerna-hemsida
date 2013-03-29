@@ -115,7 +115,7 @@
     <div id="wrapper">
         <div id="content">
             <?
-                $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
+                $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook eller google+! "
                                 , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
                                 , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
                                     );
