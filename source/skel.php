@@ -114,6 +114,29 @@
     </header>
     <div id="wrapper">
         <div id="content">
+            <?
+                $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
+                                , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
+                                , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
+                                    );
+                $alex    = array( "Den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
+                                , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
+                                , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
+                                );
+                $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
+                                , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
+                                );
+                $cite    = array( "Togald Nilsson"    => $togald
+                                , "Bard Nilsson"      => $bard
+                                , "Alexander Van Dam" => $alex
+                                );
+                $members = array( "Togald Nilsson"
+                                , "Bard Nilsson"
+                                , "Alexander Van Dam"
+                                );
+                # All of the above are arrays necessary to display the 
+                # citations correctly. 
+            ?>
             <?php 
                 echo $content;
             ?>
@@ -125,32 +148,13 @@
         <aside>
             <section>
                 <?
-                    $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook, google+ eller min styrelseblogg! "
-                                    , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
-                                    , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
-                                    );
-                    $alex    = array( "den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
-                                    , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
-                                    , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
-                                    );
-                    $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
-                                    , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
-                                    );
-                    $cite    = array( "Togald Nilsson"    => $togald
-                                    , "Bard Nilsson"      => $bard
-                                    , "Alexander Van Dam" => $alex
-                                    );
-                    $members = array( "Togald Nilsson"
-                                    , "Bard Nilsson"
-                                    , "Alexander Van Dam"
-                                    );
-                    # All of the above are arrays necessary to display the 
-                    # citations correctly. 
-                    $name = $members[rand(0,count($members)-1)];
-                    $quote = $cite[$name][rand(0,count($cite[$name])-1)];
+                    if ( !isset( $name ) ) 
+                        $name = $members[rand(0,count($members)-1)];
+                    if ( !isset( $quote ) )
+                        $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
                     echo "                <img src=\"".$Root."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
-                    echo "                <p style=\"font-style:italic;\">$quote";
+                    echo "                <p style=\"font-style:italic;\">$quote\n";
                 ?>
             </section>
             <section class="important">

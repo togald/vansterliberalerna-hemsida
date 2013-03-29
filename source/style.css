@@ -38,6 +38,11 @@ p {
     text-align: justify;
 }
 
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
 ul, ol, dl {
 	margin: 4pt 5pt 10pt;
 }
@@ -76,6 +81,8 @@ dd {
 
 img {
     border: 0;
+    float: left;
+    margin: 0 5pt;
 }
 
 header, #wrapper, footer {
@@ -294,12 +301,14 @@ nav {
 
 .pressimage p {
     text-align: center;
-    margin: 3pt 0 3pt;
-    padding: 0;
+    padding: 3pt 0 3pt;
+    margin: 0;
 }
 
 .pressimage img {
     float: left;
+    margin: 0;
+    padding: 0;
 }
 
 /* special sidebar styling */
