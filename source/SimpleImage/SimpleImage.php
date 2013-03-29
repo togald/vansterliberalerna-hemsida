@@ -41,7 +41,7 @@ class SimpleImage {
       } elseif( $image_type == IMAGETYPE_GIF ) {
          imagegif($this->image,$filename);         
       } elseif( $image_type == IMAGETYPE_PNG ) {
-         imagepng($this->image,$filename);
+         imagepng($this->image,$filename,9); # Image compression level set by MFserver
       }   
       if( $permissions != null) {
          chmod($filename,$permissions);

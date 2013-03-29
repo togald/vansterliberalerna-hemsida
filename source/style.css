@@ -6,20 +6,23 @@ body {
 }
 
 h1 {
-	margin: 15pt 5pt 7pt;
-	padding: 0;
+	padding: 15pt 5pt 7pt;
+	margin: 0;
 	text-align: center;
 	font-family: arial,helvetica;
+    clear: both;
 }
 
 h2 {
-	margin: 15pt 5pt 3pt;
-	padding: 0;
+	padding: 15pt 5pt 3pt;
+	margin: 0;
+    clear: both;
 }
 
 h3 {
-	margin: 15pt 5pt 3pt;
-	padding: 0;
+	padding: 15pt 5pt 3pt;
+	margin: 0;
+    clear: both;
 }
 
 a:link, a:visited {
@@ -277,7 +280,7 @@ nav {
     float: left;
     border: 1px solid gray;
     border-radius: 4pt;
-    padding: 4pt;
+    padding: 4pt 0;
     margin: 2pt;
     width: 200px;
 }

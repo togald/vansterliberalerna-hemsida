@@ -134,10 +134,10 @@
     This is like the main method, i.e. the code that is executed when this file is run. It checks the $Content directory, creates a list of all directories in the $Content directory and any subdirs, and then makes an index page for every directory. Then, a root index page is generated, and style.css, and the img/ directory is copied to the $Target location. 
     */
     
-    $directories = scandir($Content);
-    $ignore = array('.', '..');
-    foreach ( $directories as $directory ) {
-        if ( !in_array( $directory, $ignore ) && is_dir( $Content.$directory ) ) {
+    $Directories = scandir($Content);
+    $Ignore = array('.', '..');
+    foreach ( $Directories as $directory ) {
+        if ( !in_array( $directory, $Ignore ) && is_dir( $Content.$directory ) ) {
             $Dirs[count($Dirs)] = $Content.$directory.'/';
             listDirectoryRecursive($Content.$directory);
         }
