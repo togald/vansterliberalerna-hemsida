@@ -131,6 +131,7 @@
                                     );
                     $alex    = array( "den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
                                     , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
+                                    , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
                                     );
                     $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
                                     , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
@@ -148,8 +149,8 @@
                     $name = $members[rand(0,count($members)-1)];
                     $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
-                    echo "<img src=\"".$Root."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
-                    echo "<p style=\"font-style:italic;\">$quote";
+                    echo "                <img src=\"".$Root."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
+                    echo "                <p style=\"font-style:italic;\">$quote";
                 ?>
             </section>
             <section class="important">

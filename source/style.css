@@ -32,9 +32,6 @@ a:hover, a:active {
 
 p {
 	margin: 0 5pt 14pt;
-}
-
-#content p {
     text-align: justify;
 }
 
@@ -272,6 +269,34 @@ nav {
 #likebar {
     text-align: center;
     margin: 0 auto 10pt;
+    clear: both;
+    width: inherit;
+}
+
+.pressimage {
+    float: left;
+    border: 1px solid gray;
+    border-radius: 4pt;
+    padding: 4pt;
+    margin: 2pt;
+    width: 200px;
+}
+
+.pressimage h4 {
+    font-size: 12pt;
+    margin: 0 auto 4pt;
+    padding: 0;
+    text-align: center;
+}
+
+.pressimage p {
+    text-align: center;
+    margin: 3pt 0 3pt;
+    padding: 0;
+}
+
+.pressimage img {
+    float: left;
 }
 
 /* special sidebar styling */
@@ -357,6 +382,7 @@ footer {
 
 footer p {
 	font-size: 9pt;
+    text-align: center;
 }
 
 footer a:link, footer a:visited {
