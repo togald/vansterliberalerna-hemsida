@@ -92,6 +92,13 @@
                             <li><a href="<?php echo $URL ?>politik/vard/index.php">Vård och omsorg</a>
                         </ul>
                     <li><a href="<?php echo $URL ?>vardegrund/index.php">Värdegrund</a>
+                        <ul>
+                            <li><a href="<?php echo $URL ?>vardegrund/liberalism">Liberalism - frihet för individen</a>
+                            <li><a href="<?php echo $URL ?>vardegrund/vansterpolitik">Vänsterpolitik - de sociala systemen</a>
+                            <li><a href="<?php echo $URL ?>vardegrund/ansvar">Ansvar för egna handlingar</a>
+                            <li><a href="<?php echo $URL ?>vardegrund/fakta">Fakta och saklighet</a>
+                            <li><a href="<?php echo $URL ?>vardegrund/miljo">Miljö- och energipolitik</a>
+                        </ul>
                     <li><a href="<?php echo $URL ?>styrelsen/index.php">Styrelsen</a>
                         <ul>
                             <li><a href="<?php echo $URL ?>styrelsen/bard/index.php">Bard Nilsson (ordförande)</a>

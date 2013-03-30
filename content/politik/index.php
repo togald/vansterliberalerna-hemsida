@@ -2,7 +2,7 @@
     $title = "Politik";
     $Dires = array();
     
-    echo "        <h1>$title</h1>";
+    echo "<h1>$title</h1>";
     $dh = @opendir( $Content.'politik/' );
     while ( false !== ( $file = readdir( $dh ) ) ) {
         if ( is_dir($Content.'politik/'.$file) && ( $file != "." && $file != ".." ) ) {

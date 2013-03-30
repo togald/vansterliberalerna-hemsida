@@ -1,9 +1,15 @@
 <?php
 	$title = "Värdegrund";
-?>
-
-<h1><?php echo $title ?></h1>
-Vänsterliberalernas värdegrund bygger på fem saker som vi tycker är viktiga för samhället:
+    $Dires = array(
+        "liberalism"
+        , "vansterpolitik"
+        , "ansvar"
+        , "fakta"
+        , "miljo"
+        );
+    
+    echo "<h1>$title</h1>";
+    echo '<p>Vänsterliberalernas värdegrund bygger på fem saker som vi tycker är viktiga för samhället:
 
 <ol>
     <li>Liberalism - individens frihet och rätt till privatliv
@@ -11,22 +17,17 @@ Vänsterliberalernas värdegrund bygger på fem saker som vi tycker är viktiga 
     <li>Individens ansvar för sina egna handlingar
     <li>Fakta och saklighet, inte löst tyckande eller dåligt underbyggda känsloargument
     <li>Miljö- och energipolitik
-</ol>
-
-<h2>Liberalism - frihet för individen</h2>
-<p>
-
-<h2>Vänsterpolitik - de sociala systemen</h2>
-<p>
-
-<h2>Ansvar för egna handlingar</h2>
-<p>
-
-<h2>Fakta och saklighet</h2>
-<p>
-
-<h2>Miljö- och energipolitik</h2>
-<p>
+</ol>';
+    
+    foreach ( $Dires as $dir ) {
+        ob_start();
+        include $dir.'/index.php';
+        $output = ob_get_clean();
+        $output = str_replace( "</h1>", "</h2>", str_replace( "<h1>", "<h2>", $output ) );
+        echo $output;
+    }
+    $title = "Värdegrund";
+?>
 
 <p>Vänsterliberalerna är, som namnet antyder, ett vänsterparti med en liberal ideologi. Det kan tyckas motsägelsefullt, eftersom Vänster alltid förknippats med den socialistiska ideologin, men det är långt ifrån omöjligt. Vänsterliberalerna tror på individens rätt att bestämma över sig själv, men vill samtidigt att det ska finnas ett skyddsnät i samhället för att se till att människor som inte har arbete, eller inte kan arbeta, också kan leva i samhället. 
 
