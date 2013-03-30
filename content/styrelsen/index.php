@@ -8,6 +8,6 @@
 <p>För närvarande har styrelsen tre medlemmar, nämligen:
 <ul>
     <li><a href="<?php echo $URL ?>styrelsen/bard/index.php">Bard Nilsson (ordförande)</a>
-    <li><a href="<?php echo $URL ?>styrelsen/togald/index.php">Togald Nilsson (Sereterare)</a>
+    <li><a href="<?php echo $URL ?>styrelsen/togald/index.php">Togald Nilsson (sereterare)</a>
     <li><a href="<?php echo $URL ?>styrelsen/alexander/index.php">Alexander Van Dam (kassör)</a>
 </ul>

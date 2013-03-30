@@ -115,28 +115,37 @@
     <div id="wrapper">
         <div id="content">
             <?
-                $togald  = array( "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook eller google+! "
-                                , "Om man vill åka in i fängelse riktigt jävla länge i Sverige så ska man inte bli mördare, våldtäktsman eller pedofil. Det är mycket lättare att bli nätpirat. Att ladda ner och seeda en film till en ratio på 2,5 är nämligen liktydligt med att våldta och mörda en mindre dagisklass, med dagens straffskala. "
-                                , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
-                                    );
-                $alex    = array( "Den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
-                                , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
-                                , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
-                                );
-                $bard    = array( "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
-                                , "Allt som har den ungefärliga formen av ett ollon går att gnida mot någons ansikte för att skapa en obehaglig stämning. "
-                                , "Kommer jag där som 80-åring och bara \"Jag har skitit i urnan\". \"Du kan knappt skita själv\", säger myndigheterna, \"Ja, men mitt barnbarn hjälpte mig.\""
-                                );
-                $cite    = array( "Togald Nilsson"    => $togald
-                                , "Bard Nilsson"      => $bard
-                                , "Alexander Van Dam" => $alex
-                                );
-                $members = array( "Togald Nilsson"
-                                , "Bard Nilsson"
-                                , "Alexander Van Dam"
-                                );
-                # All of the above are arrays necessary to display the 
-                # citations correctly. 
+                /*
+                 * These arrays are used to store citations. 
+                 */
+                $togald  = array( 
+                    "Jag driver framför allt frågor som gäller immaterialrätt och miljöpolitik. Välkommen att debattera med mig på facebook eller google+! "
+                    , "Dagens antipiratpolitik är spårad. Speltillverkarna satsar massor av pengar på att bygga ett system som förhindrar folk att sälja spel begagnade eller låna av varandra. Resultatet: man kan inte spela första veckan efter release eftersom servrarna är överbelastade. "
+                    , "DRM är dyrt och närmast verkningslöst. DVD har skydd, som knäcktes dagar efter release. Blu-ray har skydd, som knäcktes dagar efter release. DRM-skyddade spel finns crackade och klara på The Pirate Bay en eller ett par veckor efter release. Det är dags att vi slutar med DRM! "
+                    , "Det stora problemet med DRM är, att om man kan titta på något, eller lyssna på det, eller över huvud taget konsumera det, så kan det kopieras. Det har med naturlagarna att göra. Så länge det finns fri programvara, är DRM ett svärd utan klinga. "
+                    , "För att Sverige ska kunna bryta sitt oljeberoende, måste vi enas om vad vi ska driva våra bilar med. Kollektivtrafik är inte den stora lösningen i ett land som Sverige, vi är beroende av bilar. "
+                    , "Om vi tog vara på allt matavfall och all gödsel som produceras i Sverige, och gjorde biogas av det, så skulle vi kunna driva alla bussar i hela landet med den gasen. "
+                    , "Sverige får årligen ungefär 420 000 TWh energi från solen. Hela Sveriges energiförbrukning ligger i storleksordningen 650 TWh per år. Vi får 646 gånger mer energi från solen än vad vi använder, och så pratar man om energikris, och att vi behöver olja och kärnkraft. "
+                    , "Det finns tillfällen när man i sin hjärna tänker sig en Hitlermustasch på alla bilder man ser. Nu är ett sådant tillfälle. "
+                );
+                $alex    = array( 
+                    "Den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
+                    , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
+                    , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
+                );
+                $bard    = array( 
+                    "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
+                );
+                $cite    = array( 
+                    "Togald Nilsson"      => $togald
+                    , "Bard Nilsson"      => $bard
+                    , "Alexander Van Dam" => $alex
+                );
+                $members = array( 
+                    "Togald Nilsson"
+                    , "Bard Nilsson"
+                    , "Alexander Van Dam"
+                );
             ?>
             <?php 
                 echo $content;

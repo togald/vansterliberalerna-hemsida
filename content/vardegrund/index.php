@@ -3,6 +3,31 @@
 ?>
 
 <h1><?php echo $title ?></h1>
+Vänsterliberalernas värdegrund bygger på fem saker som vi tycker är viktiga för samhället:
+
+<ol>
+    <li>Liberalism - individens frihet och rätt till privatliv
+    <li>Vänsterpolitik - det sociala skyddsnätet
+    <li>Individens ansvar för sina egna handlingar
+    <li>Fakta och saklighet, inte löst tyckande eller dåligt underbyggda känsloargument
+    <li>Miljö- och energipolitik
+</ol>
+
+<h2>Liberalism - frihet för individen</h2>
+<p>
+
+<h2>Vänsterpolitik - de sociala systemen</h2>
+<p>
+
+<h2>Ansvar för egna handlingar</h2>
+<p>
+
+<h2>Fakta och saklighet</h2>
+<p>
+
+<h2>Miljö- och energipolitik</h2>
+<p>
+
 <p>Vänsterliberalerna är, som namnet antyder, ett vänsterparti med en liberal ideologi. Det kan tyckas motsägelsefullt, eftersom Vänster alltid förknippats med den socialistiska ideologin, men det är långt ifrån omöjligt. Vänsterliberalerna tror på individens rätt att bestämma över sig själv, men vill samtidigt att det ska finnas ett skyddsnät i samhället för att se till att människor som inte har arbete, eller inte kan arbeta, också kan leva i samhället. 
 
 <p>Vänsterliberalerna vill se ett helt tätslutande socialt skyddsnät, där ingen exkluderas från samhället. Det är inte nödvändigtvis individens fel att det går åt helvete i livet, och det ingår i statens arbete att se till att alla människor kan försörja sig. Vi tror att alla människor vill arbeta, och bidra till samhället, men alla individer kanske inte kan bidra ekonomiskt. Men även om man inte kan arbeta, så bidrar man till samhället på andra sätt. Varje enskild individ är en ovärderlig resurs, och samhället har inte råd att ignorera det. 
