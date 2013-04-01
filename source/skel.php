@@ -139,6 +139,7 @@
                     "Den som fyller sina fickor med missgärningarnas stenar kommer med stor sannolikhet att tappa byxorna inför allmänheten."
                     , "Då har man skålat in det nya året med 15 kg krut, skumpa och Raubtier på högsta volym! "
                     , "Sitter på bussen och försöker sätta mig in i karaktären som en ond äcklig andebesvärjare/shaman inför teatern. Upptäcker plötsligt att flera runt omkring kollar konstigt på mig. Då kommer jag på att jag suttit och läst ramsor på djupaste death-metal growl högt för mig själv. Bussen är på väg mot Knutby och jag är klädd som en Primus Satanist. FML."
+                    , "Har man dödat en neger så måste man fan äta den också. x"
                 );
                 $bard    = array( 
                     "För att utvecklas som individ och uppnå inre frid måste du övervinna dina egna hinder. Ibland kan det krävas stort tålamod och ibland bara en grov jävla bössa. Vet detta och handla efter eget förstånd. "
