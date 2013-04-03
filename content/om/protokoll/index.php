@@ -19,7 +19,7 @@
     // natcasesort måste vändas om, nyaste skall vara först!
     natcasesort($Dires);
     foreach ( $Dires as $dir ) {
-       echo '            <li><a href="'.str_replace( $Target, $URL, $dir ).'">'.substr(str_replace( $Target.'om/protokoll/styrelse/', '', $dir ), 0, -4 ).'</a>';
+       echo '            <li><a href="'.str_replace( $Target, $URL, $dir ).'">'.substr(str_replace( $Target.'om/protokoll/styrelse/', '', $dir ), 0, -13 ).'</a>';
     }
 ?></ul>
 
@@ -37,6 +37,6 @@
     // natcasesort måste vändas om, nyaste skall vara först!
     natcasesort($Dires);
     foreach ( $Dires as $dir ) {
-       echo '            <li><a href="'.str_replace( $Target, $URL, $dir ).'">'.substr(str_replace( $Target.'om/protokoll/parti/', '', $dir ), 0, -4 ).'</a>';
+       echo '            <li><a href="'.str_replace( $Target, $URL, $dir ).'">'.substr(str_replace( $Target.'om/protokoll/parti/', '', $dir ), 0, -10 ).'</a>';
     }
 ?></ul>
