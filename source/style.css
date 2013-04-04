@@ -79,6 +79,14 @@ dd {
 	max-width: 370pt;
 }
 
+#content p.emphasize {
+    font-style: italic;
+    text-align: center;
+    margin: 10pt auto 15pt;
+    padding: 0 5pt;
+    max-width: 370pt;
+}
+
 img {
     border: 0;
     float: left;
