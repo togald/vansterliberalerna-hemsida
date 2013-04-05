@@ -81,15 +81,27 @@
                     <li><a href="<?php echo $URL ?>index.php">Hem</a>
                     <li><a href="<?php echo $URL ?>politik/index.php">Politik</a>
                         <ul>
-                            <li><a href="<?php echo $URL ?>politik/bistand/index.php">Bistånd</a>
-                            <li><a href="<?php echo $URL ?>politik/forsvar/index.php">Försvar</a>
-                            <li><a href="<?php echo $URL ?>politik/immaterialratt/index.php">Immaterialrätt</a>
-                            <li><a href="<?php echo $URL ?>politik/invandring/index.php">Invandring</a>
-                            <li><a href="<?php echo $URL ?>politik/miljo/index.php">Miljö</a>
-                            <li><a href="<?php echo $URL ?>politik/rattsvasende/index.php">Rättsväsende</a>
-                            <li><a href="<?php echo $URL ?>politik/skatter/index.php">Skatter och bidrag</a>
-                            <li><a href="<?php echo $URL ?>politik/utbildning/index.php">Utbildning</a>
-                            <li><a href="<?php echo $URL ?>politik/vard/index.php">Vård och omsorg</a>
+                            <?php
+                                echo "<!-- Denna del genereras av ett skript -->\n";
+                                $files = array();
+                                $ignore = array( '.', '..' );
+                                $dh = @opendir( $Content.'politik' );
+                                while ( false !== ( $file = readdir( $dh ) ) ) {
+                                    if ( !in_array( $file, $ignore ) && is_dir( $Content.'politik/'.$file ) ) {
+                                        $files[ sizeof( $files ) ] = $file;
+                                    }
+                                }
+                                
+                                natcasesort( $files );
+                                
+                                foreach ( $files as $file ) {
+                                    ob_start();
+                                    include( $Content.'politik/'.$file.'/index.php' );
+                                    $indexfile = ob_get_clean();
+                                    eval( substr( $indexfile, 5, strpos( $indexfile, "?>" ) ) );
+                                    echo '                            <li><a href="'.$URL.'politik/'.$file.'/index.php">'.$title."</a>\n";
+                                }
+                            ?>
                         </ul>
                     <li><a href="<?php echo $URL ?>vardegrund/index.php">Värdegrund</a>
                         <ul>
