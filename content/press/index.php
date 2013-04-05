@@ -25,6 +25,7 @@
             $dirs[sizeof($dirs)] = $file;
         }
     }
+    natcasesort( $dirs );
     
     function scanForImages ($path) {
         $images = array();
@@ -63,20 +64,20 @@
             echo "<section class=\"pressimage\">\n";
             echo "    <h4>$image</h4>\n";
             if ( $svg )
-                echo "    <object data=\"$dir/$image.thumb.svg\" type=\"image/svg+xml\" width=200>\n    ";
+                echo "    <object data=\"$dir/".rawurlencode( $image ).".thumb.svg\" type=\"image/svg+xml\" width=200>\n    ";
             if ( $png )
-                echo "    <img src=\"$dir/$image.thumb.png\" height=".getimagesize($path.$dir.'/'.$image.'.thumb.png')[1]." width=200 alt=\"$image\">\n";
+                echo "    <img src=\"$dir/".rawurlencode( $image ).".thumb.png\" height=".getimagesize($path.$dir.'/'.$image.'.thumb.png')[1]." width=200 alt=\"$image\">\n";
             if ( $jpg )
-                echo "    <img src=\"$dir/$image.thumb.jpg\" height=".getimagesize($path.$dir.'/'.$image.'.thumb.jpg')[1]." width=200 alt=\"$image\">\n";
+                echo "    <img src=\"$dir/".rawurlencode( $image ).".thumb.jpg\" height=".getimagesize($path.$dir.'/'.$image.'.thumb.jpg')[1]." width=200 alt=\"$image\">\n";
             if ( $svg )
                 echo "    </object>\n";
             echo "<p>";
             if ( $svg )
-                echo "<a href=\"$dir/$image.svg\">SVG</a> ";
+                echo "<a href=\"$dir/".rawurlencode( $image ).".svg\">SVG</a> ";
             if ( $png )
-                echo "<a href=\"$dir/$image.png\">PNG</a> ";
+                echo "<a href=\"$dir/".rawurlencode( $image ).".png\">PNG</a> ";
             if ( $jpg )
-                echo "<a href=\"$dir/$image.jpg\">JPEG</a> ";
+                echo "<a href=\"$dir/".rawurlencode( $image ).".jpg\">JPEG</a> ";
             echo "</section>\n\n";
         }
     }

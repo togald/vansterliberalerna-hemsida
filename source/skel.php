@@ -183,7 +183,7 @@
                     if ( !isset( $quote ) )
                         $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
-                    echo "                <img src=\"".$Root."img/$name.thumb.jpg\" height=96, width=96, style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
+                    echo "                <img src=\"".$Root."img/".rawurlencode( $name ).".thumb.jpg\" height=96 width=96 style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
                     echo "                <p style=\"font-style:italic;\">$quote\n";
                 ?>
             </section>
