@@ -1,6 +1,7 @@
 <?php
     $title = "Liberalism - frihet för individen";
 ?>
+
 <h1><?php echo $title ?></h1>
 <p>Vänsterliberalerna anser att varje medborgare ska ha rätt att leva sitt liv hur han eller hon vill. Statens uppgift är inte att styra hur medborgarna lever sina liv, statens uppgift är att sätta upp ramar för hur individer får leva. Så länge man håller sig inom dessa ramar, lagarna, så är det fritt fram. Lagarna ska stiftas för att samhället ska fungera, men inte så att de begränsar individens frihet utan att det finns anledning till det. 
 
