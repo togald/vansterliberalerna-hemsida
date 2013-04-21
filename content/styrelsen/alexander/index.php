@@ -16,22 +16,22 @@
 ?>
 
 <h1><?php echo $title ?></h1>
-<img src="<?php echo $URL ?>img/Alexander Van Dam.jpg" width=200 height=250 alt="Bild på Alexander Van Dam">
 <blockquote>
     <? echo $quote ?>
 </blockquote>
-<h2>Snabba frågor</h2>
-<dl>
+<img src="<?php echo $URL ?>img/Alexander Van Dam.jpg" width=200 height=250 alt="Bild på Alexander Van Dam">
+
+<dl id="about">
     <dt>Namn?
     <dd>Alexander Van Dam
     <dt>Ålder?
     <dd><? echo getAge($birthDate) ?> år
     <dt>Sysselsättning?
-    <dd>
+    <dd>Personlig assistent vid Uppsala kommun
     <dt>Primära frågor i partiet?
-    <dd>
+    <dd>Försvarspolitik, rättsväsende och invandring
     <dt>Intressen?
-    <dd>
+    <dd>Datorspel, rollspel, airsoft, teater, eldkonst, musik och böcker.
 </dl>
 <p>
 <blockquote>

@@ -16,12 +16,12 @@
 ?>
 
 <h1><?php echo $title ?></h1>
-<img src="<?php echo $URL ?>img/Togald Nilsson.jpg" width=200 height=250 alt="Bild på Togald Nilsson">
 <blockquote>
     <? echo $quote ?>
 </blockquote>
-<h2>Snabba frågor</h2>
-<dl>
+<img src="<?php echo $URL ?>img/Togald Nilsson.jpg" width=200 height=250 alt="Bild på Togald Nilsson">
+
+<dl id="about">
     <dt>Namn?
     <dd>Togald Nilsson
     <dt>Ålder?

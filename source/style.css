@@ -279,6 +279,11 @@ nav {
 }
 
 /* Special content styling */
+#about {
+    float: left;
+    max-width: 220pt;
+}
+
 #content {
     float: left;
     width: 480pt;
