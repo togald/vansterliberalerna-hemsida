@@ -3,7 +3,7 @@
 ?>
 <?
     $name = "Alexander Van Dam";
-    $birthDate = "";
+    $birthDate = "1990-03-19";
     $quote = $cite[$name][rand(0,count($cite[$name])-1)];
     
     function getAge($then) {
