@@ -14,8 +14,8 @@
     $Root = '/home/mfserver/ramdisk/vansterliberalerna-hemsida/';
     $Source = $Root.'source/';
     $Content = $Root.'content/';
-    $Target = '/srv/http/';
-    $URL = 'http://mfserver.net/';
+    $Target = '/home/mfserver/ramdisk/output/';
+    $URL = 'http://81.170.214.41/vansterliberalerna/';
     //$URL = 'http://localhost/';
     $Dirs = array();
     

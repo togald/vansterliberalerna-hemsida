@@ -1,4 +1,4 @@
-<?
+<?php
     # PHP short tags are used to make dynamic content. This section makes dev-side variables avaliable to the server-side. 
     $Root = "<?php echo $URL ?>"; # Developer variable $URL is avaliable as server variable $Root
 ?>
@@ -133,7 +133,7 @@
     </header>
     <div id="wrapper">
         <div id="content">
-            <?
+            <?php
                 /*
                  * These arrays are used to store citations. 
                  */
@@ -177,13 +177,13 @@
         </div>
         <aside>
             <section>
-                <?
+                <?php
                     if ( !isset( $name ) ) 
                         $name = $members[rand(0,count($members)-1)];
                     if ( !isset( $quote ) )
                         $quote = $cite[$name][rand(0,count($cite[$name])-1)];
                     echo "<h2>$name</h2>\n";
-                    echo "                <img src=\"".$Root."img/".rawurlencode( $name ).".thumb.jpg\" height=96 width=96 style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
+                    echo "                <img src=\"".$URL."img/".rawurlencode( $name ).".thumb.jpg\" height=96 width=96 style=\"float:left;margin: 0 7pt 7pt 0;\" alt=\"Bild på $name\">\n";
                     echo "                <p style=\"font-style:italic;\">$quote\n";
                 ?>
             </section>
